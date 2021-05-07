@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/control_comac" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>

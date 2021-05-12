@@ -2156,7 +2156,7 @@ QComboBox QAbstractItemView {
               </item>
              </layout>
             </item>
-            <item row="5" column="1">
+            <item row="6" column="1">
              <widget class="QCheckBox" name="checkBox_capft_maj_geom">
               <property name="font">
                <font>
@@ -2171,7 +2171,7 @@ QComboBox QAbstractItemView {
               </property>
              </widget>
             </item>
-            <item row="6" column="1">
+            <item row="7" column="1">
              <widget class="QCheckBox" name="checkBox_capft_create_athd">
               <property name="font">
                <font>
@@ -2183,7 +2183,7 @@ QComboBox QAbstractItemView {
               </property>
              </widget>
             </item>
-            <item row="7" column="1">
+            <item row="8" column="1">
              <widget class="QCheckBox" name="checkBox_capft_create_orange_ok">
               <property name="font">
                <font>
@@ -2201,10 +2201,17 @@ QComboBox QAbstractItemView {
               </property>
              </widget>
             </item>
-            <item row="8" column="1">
+            <item row="9" column="1">
              <widget class="QCheckBox" name="checkBox_capft_create_orange_nok">
               <property name="text">
                <string>Créer les appuis ORANGE nok manquants</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QCheckBox" name="checkBox_capft_maj_fields_erase">
+              <property name="text">
+               <string>Effacer les champs</string>
               </property>
              </widget>
             </item>

@@ -45,7 +45,8 @@ class MajTask(QgsTask):
                                 self.dockwidget.checkBox_numerotation.checkState(),
                                 self.dockwidget.checkBox_comac_create_zone.checkState(),
                                 self.dockwidget.checkBox_comac_create_enedis_nok.checkState(),
-                                self.dockwidget.checkBox_capft_create_orange_nok.checkState()
+                                self.dockwidget.checkBox_capft_create_orange_nok.checkState(),
+                                self.dockwidget.checkBox_capft_maj_fields_erase.checkState()
                                 ]
 
 
@@ -203,6 +204,13 @@ class MajTask(QgsTask):
                     else:
                         return False
 
+                if self.options_update[16] == 2:
+                    result = self.erase_fields()
+                    if result:
+                        self.messages.append(str(self.total_feat_updated['maj']) + " appuis ORANGE ont été remis à zéro")
+                        #self.layer_to_edit.commitChanges()
+                    else:
+                        return False
 
 
 
@@ -250,6 +258,36 @@ class MajTask(QgsTask):
 
         for field in self.fieldnames:
             self.fieldkeys.append(self.layer_to_edit.fields().indexFromName(field))
+
+
+    def erase_fields(self):
+
+        self.prepare()
+
+        for y, feature in enumerate(self.layer_to_edit_selection):
+            val = float(y) / float(len(self.layer_to_edit_selection) * 100)
+            self.setProgress(val)
+            if self.isCanceled():
+                return False
+            for feat in self.layer_for_edit_selection:
+                updated = False
+                if (str(feat['numero']) in str(feature['numero'])) and str(feat['code_insee']) == str(feature['code_insee']) and len(str(feat['numero'])) > 2:
+
+
+                    for i, field in enumerate(self.fieldnames):
+
+                        if ('capft' in self.layer_for_edit.name()):
+
+                            self.layer_to_edit.changeAttributeValue(feature.id(), self.fieldkeys[i],  '')
+                            if updated == False: updated = True
+                    if updated == True: self.total_feat_updated['maj'] += 1
+
+
+        return True
+
+
+
+
 
     def run_maj_fields(self):
 

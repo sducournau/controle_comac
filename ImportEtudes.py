@@ -24,7 +24,7 @@ class list_etudes_obj:
 
 
 
-    def __init__(self, inputs, output, plugin_dir, layer_name, repare_pcm=False):
+    def __init__(self, inputs, output, plugin_dir, layer_name, repare_pcm=False, option_boitier_fibre=False):
 
         self.list_fields_export_comac_supports = ['NRO','PMZ','Etude','etat','troncon', 'numero','commentair']
         self.list_fields_export_stats = ["NRO","Numéro PMZ GEOFIBRE",'Commune',"INSEE","Nom d'affaire E-PLAN",'Adresse','N° Plan','Nb de Support Enedis','Nb de Support D3','Réseau projetés (m)',
@@ -53,7 +53,7 @@ class list_etudes_obj:
 
         self.type_supports = dict_list
         self.repare_pcm = repare_pcm
-
+        self.option_boitier_fibre = option_boitier_fibre
 
         if len(self.list_pcm) == 0 or len(self.list_C6) == 0:
             self.get_list_etudes()
@@ -215,7 +215,7 @@ class list_etudes_obj:
 
         for y, pcm in enumerate(self.list_pcm):
 
-            self.buildEtudeComacItem(pcm, self.data['comac'], self.list_fields_export_comac_supports, self.type_supports, self.repare_pcm)
+            self.buildEtudeComacItem(pcm, self.data['comac'], self.list_fields_export_comac_supports, self.type_supports, self.repare_pcm, self.option_boitier_fibre)
             self.nb_appuis_comac += len(self.list_etudes_comac[y]['Supports'])
 
 
@@ -788,7 +788,7 @@ class list_etudes_obj:
 
 #         proj_wgs93 = pyproj.Proj(proj='latlong', ellps='epsg:2154')
 
-        def __init__(self, pcm, list_etudes, list_fields_export_supports, type_supports,repare_pcm):
+        def __init__(self, pcm, list_etudes, list_fields_export_supports, type_supports,repare_pcm,option_boitier_fibre):
 
 
             self.type_supports = type_supports
@@ -802,7 +802,7 @@ class list_etudes_obj:
             self.name_2 = Path(self.pcm['path'])
             self.name_2 = self.name_2.name
             self.repare_pcm = repare_pcm
-
+            self.option_boitier_fibre = option_boitier_fibre
 
             if re.search('(?<=-)([23D]*(-){1})', self.name_1) or re.search('((?<=-)(V){1}[0-9]{1})', self.name_1) or re.search('(?<=-)([A-CE-Z]{1})([0-9]{1,2})', self.name_1):
                 self.name = self.name_1
@@ -1297,7 +1297,7 @@ class list_etudes_obj:
 
             if re.search('E[0-9]*', support['Nom']): troncon = 'D3'
 
-            if support['NonCalcule'] == '0' and not [(match) for match in matchers_nature if match in support['Nature']] and (support['Nom'] in list_supports_total_fibre or support['optBoitierFibre'] == '1') and not [(match) for match in matchers_name if match in support['Nom']]:
+            if support['NonCalcule'] == '0' and not [(match) for match in matchers_nature if match in support['Nature']] and (support['Nom'] in list_supports_total_fibre) and not [(match) for match in matchers_name if match in support['Nom']]:
                 troncon = 'D2'
                 support['etat'] = 'ok'
                 if support['ban_vert'] == 'nok': erreur = 'Bandeau vert non coché'
@@ -1332,7 +1332,12 @@ class list_etudes_obj:
                         len_num += 1
                     support['numero'] = 'E' + support['numero']
 
-
+            if  support['optBoitierFibre'] == '1' and support['Nom'] not in list_supports_total_fibre:
+                
+                if self.option_boitier_fibre:
+                    troncon = 'D3'
+                else:
+                    troncon = 'D2'
 
 
 

@@ -599,8 +599,8 @@ QComboBox QAbstractItemView {
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>458</width>
-         <height>729</height>
+         <width>463</width>
+         <height>768</height>
         </rect>
        </property>
        <attribute name="label">
@@ -668,11 +668,11 @@ border-radius:5px;
              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;IMPORT&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Pour COMAC&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7.8pt; font-weight:600;&quot;&gt;Pour COMAC&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;Sélectionner un dossier à partir duquel l’algorithme va itérer et calculer tous les PCMs présents dans les sous-dossiers. &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Pour CAPFT&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7.8pt; font-weight:600;&quot;&gt;Pour CAPFT&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;Sélectionner des C6 à partir duquel l’algorithme va importer les appuis. &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;Lancer l'import en appuyant sur &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;Importer&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;Vous pouvez accéder au dossier temporaire en appuyant sur le bouton &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;Dossier d'export&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -690,7 +690,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;Lancer le calcul en appuyant sur &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;Calculer&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;. &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;Sauvegarder les modifications en appuyant sur &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;Sauvegarder&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;. &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;Annuler les changements en appuyant sur &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;Annuler&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;. &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7.8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;CONFIGURATION&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; text-decoration: underline;&quot;&gt;Dossier temporaire&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;: permet de changer le dossier d'export.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;-  &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; text-decoration: underline;&quot;&gt;Copier PCM/PDF&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt; : permet de copier les PCMs et les livrables des études dans un dossier local.&lt;/span&gt;&lt;/p&gt;
@@ -711,8 +711,8 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>458</width>
-         <height>729</height>
+         <width>463</width>
+         <height>768</height>
         </rect>
        </property>
        <attribute name="label">
@@ -1812,8 +1812,8 @@ border: 2px solid black;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>458</width>
-         <height>729</height>
+         <width>463</width>
+         <height>768</height>
         </rect>
        </property>
        <attribute name="label">
@@ -2219,8 +2219,8 @@ QComboBox QAbstractItemView {
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>458</width>
-         <height>729</height>
+         <width>463</width>
+         <height>768</height>
         </rect>
        </property>
        <attribute name="label">
@@ -2242,7 +2242,51 @@ QComboBox QAbstractItemView {
               <property name="sizeConstraint">
                <enum>QLayout::SetNoConstraint</enum>
               </property>
-              <item row="3" column="1">
+              <item row="8" column="1">
+               <widget class="QCheckBox" name="checkBox_numerotation">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Light</family>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Nommage GESPOT</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_3">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>CONNEXION BDD</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>DOSSIER TEMPORAIRE</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
                <widget class="QLineEdit" name="lineEdit_config_gestionnaire">
                 <property name="font">
                  <font>
@@ -2288,109 +2332,6 @@ border: 2px solid black;
                 </property>
                 <property name="text">
                  <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="2">
-               <widget class="QPushButton" name="pushButton_config_connexionbdd_tablenum">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="baseSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton
-{
- background-color:#bdc3c7;
-border: 1px solid black;
-border-radius: 3px;
-padding: 3px 3px 3px 3px;
-color:black;
-
-}
-
-QPushButton:Active
-{
-
-border: 1px solid black;
-
-
-}
-QPushButton:hover
-{
-
-border: 2px solid black;
-
-}
-
-
-
-
-</string>
-                </property>
-                <property name="text">
-                 <string>OK</string>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="1">
-               <widget class="Line" name="line">
-                <property name="lineWidth">
-                 <number>5</number>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item row="7" column="1">
-               <widget class="QCheckBox" name="checkBox_numerotation">
-                <property name="font">
-                 <font>
-                  <family>Segoe UI Light</family>
-                  <pointsize>8</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Nommage GESPOT</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="0">
-               <widget class="QLabel" name="label_3">
-                <property name="font">
-                 <font>
-                  <family>Segoe UI</family>
-                  <pointsize>8</pointsize>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>CONNEXION BDD</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0">
-               <widget class="QLabel" name="label">
-                <property name="font">
-                 <font>
-                  <family>Segoe UI</family>
-                  <pointsize>8</pointsize>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>DOSSIER TEMPORAIRE</string>
                 </property>
                </widget>
               </item>
@@ -2445,70 +2386,8 @@ border: 2px solid black;
                 </property>
                </widget>
               </item>
-              <item row="4" column="1">
-               <widget class="QLineEdit" name="lineEdit_config_connexionbdd">
-                <property name="font">
-                 <font>
-                  <family>Segoe UI</family>
-                  <pointsize>10</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QLineEdit
-{
- background-color:white;
-color: black;
-border-radius: 6px;
-padding: 3px 3px 3px 3px;
-
-}
-QLineEdit:Active
-{
- border: 1px solid black;
-
-
-}
-QLineEdit:Inactive
-{
- border: 0px solid black;
-
-
-}
-
-QLineEdit:hover
-{
-
-border: 2px solid black;
-
-
-}
-
-
-
-</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="0">
-               <widget class="QLabel" name="label_4">
-                <property name="font">
-                 <font>
-                  <family>Segoe UI</family>
-                  <pointsize>8</pointsize>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>SCHEMA BDD</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="2">
-               <widget class="QPushButton" name="pushButton_config_connexionbdd_schema">
+              <item row="7" column="2">
+               <widget class="QPushButton" name="pushButton_config_connexionbdd_tablenum">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -2556,118 +2435,17 @@ border: 2px solid black;
                 </property>
                </widget>
               </item>
-              <item row="4" column="2">
-               <widget class="QPushButton" name="pushButton_config_connexionbdd">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
+              <item row="9" column="1">
+               <widget class="Line" name="line">
+                <property name="lineWidth">
+                 <number>5</number>
                 </property>
-                <property name="baseSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton
-{
- background-color:#bdc3c7;
-border: 1px solid black;
-border-radius: 3px;
-padding: 3px 3px 3px 3px;
-color:black;
-
-}
-
-QPushButton:Active
-{
-
-border: 1px solid black;
-
-
-}
-QPushButton:hover
-{
-
-border: 2px solid black;
-
-}
-
-
-
-
-</string>
-                </property>
-                <property name="text">
-                 <string>OK</string>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
                 </property>
                </widget>
               </item>
-              <item row="6" column="0">
-               <widget class="QLabel" name="label_5">
-                <property name="font">
-                 <font>
-                  <family>Segoe UI</family>
-                  <pointsize>8</pointsize>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>TABLE NUMEROTATION</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="2">
-               <widget class="QPushButton" name="pushButton_config_gestionnaire">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="baseSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton
-{
- background-color:#bdc3c7;
-border: 1px solid black;
-border-radius: 3px;
-padding: 3px 3px 3px 3px;
-color:black;
-
-}
-
-QPushButton:Active
-{
-
-border: 1px solid black;
-
-
-}
-QPushButton:hover
-{
-
-border: 2px solid black;
-
-}
-
-
-
-
-</string>
-                </property>
-                <property name="text">
-                 <string>OK</string>
-                </property>
-               </widget>
-              </item>
-              <item row="9" column="0">
+              <item row="10" column="0">
                <widget class="QgsColorButton" name="mColorButton">
                 <property name="color">
                  <color>
@@ -2684,14 +2462,7 @@ border: 2px solid black;
                 </property>
                </widget>
               </item>
-              <item row="9" column="1">
-               <widget class="QPushButton" name="pushButton_color">
-                <property name="text">
-                 <string>Couleur</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="1">
+              <item row="6" column="1">
                <widget class="QLineEdit" name="lineEdit_config_connexionbdd_schema">
                 <property name="font">
                  <font>
@@ -2740,8 +2511,155 @@ border: 2px solid black;
                 </property>
                </widget>
               </item>
-              <item row="3" column="0">
-               <widget class="QLabel" name="label_2">
+              <item row="5" column="2">
+               <widget class="QPushButton" name="pushButton_config_connexionbdd">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="baseSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+ background-color:#bdc3c7;
+border: 1px solid black;
+border-radius: 3px;
+padding: 3px 3px 3px 3px;
+color:black;
+
+}
+
+QPushButton:Active
+{
+
+border: 1px solid black;
+
+
+}
+QPushButton:hover
+{
+
+border: 2px solid black;
+
+}
+
+
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>OK</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QPushButton" name="pushButton_config_gestionnaire">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="baseSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+ background-color:#bdc3c7;
+border: 1px solid black;
+border-radius: 3px;
+padding: 3px 3px 3px 3px;
+color:black;
+
+}
+
+QPushButton:Active
+{
+
+border: 1px solid black;
+
+
+}
+QPushButton:hover
+{
+
+border: 2px solid black;
+
+}
+
+
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>OK</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="2">
+               <widget class="QPushButton" name="pushButton_config_connexionbdd_schema">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="baseSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+ background-color:#bdc3c7;
+border: 1px solid black;
+border-radius: 3px;
+padding: 3px 3px 3px 3px;
+color:black;
+
+}
+
+QPushButton:Active
+{
+
+border: 1px solid black;
+
+
+}
+QPushButton:hover
+{
+
+border: 2px solid black;
+
+}
+
+
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>OK</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="label_4">
                 <property name="font">
                  <font>
                   <family>Segoe UI</family>
@@ -2749,7 +2667,76 @@ border: 2px solid black;
                  </font>
                 </property>
                 <property name="text">
-                 <string>GESTIONNAIRE</string>
+                 <string>SCHEMA BDD</string>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="1">
+               <widget class="QPushButton" name="pushButton_color">
+                <property name="text">
+                 <string>Couleur</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QLineEdit" name="lineEdit_config_connexionbdd">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit
+{
+ background-color:white;
+color: black;
+border-radius: 6px;
+padding: 3px 3px 3px 3px;
+
+}
+QLineEdit:Active
+{
+ border: 1px solid black;
+
+
+}
+QLineEdit:Inactive
+{
+ border: 0px solid black;
+
+
+}
+
+QLineEdit:hover
+{
+
+border: 2px solid black;
+
+
+}
+
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>TABLE NUMEROTATION</string>
                 </property>
                </widget>
               </item>
@@ -2803,25 +2790,7 @@ border: 2px solid black;
                 </property>
                </widget>
               </item>
-              <item row="1" column="1">
-               <widget class="QCheckBox" name="checkBox_pcm">
-                <property name="font">
-                 <font>
-                  <family>Segoe UI Light</family>
-                  <pointsize>8</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Copier PCM/PDF/C6</string>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="1">
+              <item row="7" column="1">
                <widget class="QLineEdit" name="lineEdit_config_connexionbdd_tablenum">
                 <property name="font">
                  <font>
@@ -2870,10 +2839,48 @@ border: 2px solid black;
                 </property>
                </widget>
               </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>GESTIONNAIRE</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QCheckBox" name="checkBox_pcm">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Light</family>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Copier PCM/PDF/C6</string>
+                </property>
+               </widget>
+              </item>
               <item row="2" column="1">
                <widget class="QCheckBox" name="checkBox_repare_pcm">
                 <property name="text">
                  <string>Réparer coordonnées PCM</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QCheckBox" name="checkBox_option_boitier">
+                <property name="text">
+                 <string>Compter RAS + Boitier en D3</string>
                 </property>
                </widget>
               </item>

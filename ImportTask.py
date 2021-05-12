@@ -43,9 +43,10 @@ class ImportTask(QgsTask):
 
             options_export = [self.dockwidget.checkBox_pcm.checkState()]
             option_repare_pcm = True if self.dockwidget.checkBox_repare_pcm.checkState() == 2 else False
+            option_boitier_fibre = True if self.dockwidget.checkBox_option_boitier.checkState() == 2 else False
             if len(utils.INPUTS) > 0:
 
-                self.etudes = list_etudes_obj(utils.INPUTS, utils.DIR_OUTPUT, utils.DIR_PLUGIN, self.layer_name,option_repare_pcm)
+                self.etudes = list_etudes_obj(utils.INPUTS, utils.DIR_OUTPUT, utils.DIR_PLUGIN, self.layer_name,option_repare_pcm,option_boitier_fibre)
                 utils.ETUDES = self.etudes
                 self.etudes.calcul(self.layer_name)
 

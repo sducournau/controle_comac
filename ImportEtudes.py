@@ -847,7 +847,9 @@ class list_etudes_obj:
 
                 self.list_item_etude['id'] = self.pcm['id']
                 self.list_item_etude['Etude'] = re.sub('([ a-zA-Z]*)$', '',re.sub('(_V){1}[0-9]{1}', '',re.sub('(-V){1}[0-9]{1}', '' , self.name)))
-                num = re.search('(?<=-)([A-Z-]*)([0-9]{1,2})$', self.list_item_etude['Etude'])[0] if re.search('(?<=-)([A-Z-]*)([0-9]{1,2})$', self.list_item_etude['Etude']) else 'NONE'
+                num = re.search('(?<=-)([P]{1})([0-9]{1,2})', self.list_item_etude['Etude'])[0] if re.search('(?<=-)([P]{1})([0-9]{1,2})', self.list_item_etude['Etude']) else 'NONE'
+                if num == 'NONE':
+                    num = re.search('(?<=-)([A-Z]*)([0-9]{1,2})$', self.list_item_etude['Etude'])[0] if re.search('(?<=-)([A-Z]*)([0-9]{1,2})$', self.list_item_etude['Etude']) else 'NONE'
                 if re.search('((PA){1})', num) or re.search('((PB){1})', num) : num = 'NONE'
                 self.list_item_etude['Etude'] = self.list_item_etude['Etude'].replace("\'", "")
                 self.list_item_etude['Numero'] = re.sub('([_ -]*)', '', num) if num != 'NONE' else '-'
@@ -1333,7 +1335,7 @@ class list_etudes_obj:
                     support['numero'] = 'E' + support['numero']
 
             if  support['optBoitierFibre'] == '1' and support['Nom'] not in list_supports_total_fibre:
-                
+
                 if self.option_boitier_fibre:
                     troncon = 'D3'
                 else:

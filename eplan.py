@@ -548,13 +548,13 @@ class ePlanAutoExportBrut(threading.Thread):
                 pdf = writer.save_doc()
 
 
-                driver.get("https://www.e-plans.fr/DemandeAppuisCommuns/List")
-                driver.find_element_by_xpath('//input[@id="numAffaire"]').send_keys(row['numéro_affaire_enedis'])
-                driver.find_element_by_xpath('/html/body/nav/div/div[2]/form/div/span/input').click()
+                #driver.get("https://www.e-plans.fr/DemandeAppuisCommuns/List")
+                #driver.find_element_by_xpath('//input[@id="numAffaire"]').send_keys(row['numéro_affaire_enedis'])
+                #driver.find_element_by_xpath('/html/body/nav/div/div[2]/form/div/span/input').click()
 
-                WebDriverWait(driver, timeout=30).until(EC.visibility_of_element_located((By.XPATH,'//*[@id="etapes-list"]/li[1]/ul/li[4]/a'))).click()
-                sleep(2)
-                driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[1]/div/div[1]/div/div[1]/div[4]/form[1]/div/fieldset/table/tbody/tr/td/div/div/div/div[2]/input").send_keys(pdf)
+                #WebDriverWait(driver, timeout=30).until(EC.visibility_of_element_located((By.XPATH,'//*[@id="etapes-list"]/li[1]/ul/li[4]/a'))).click()
+                #sleep(2)
+                #driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[1]/div/div[1]/div/div[1]/div[4]/form[1]/div/fieldset/table/tbody/tr/td/div/div/div/div[2]/input").send_keys(pdf)
 
 
 

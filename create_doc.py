@@ -11,9 +11,7 @@ import comtypes.client
 
 
 
-operateur = 'ATHD'
-date = '13/01/2021'
-departement = '63'
+
 wdFormatPDF = 17
 
 class writeDoc:

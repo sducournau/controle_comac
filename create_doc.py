@@ -40,7 +40,7 @@ class writeDoc:
             if "Adresse chantier" in  paragraph.text:
                 paragraph.text = "Adresse chantier :	" + (str(self.etude['Adresse']) if self.etude['Adresse'] else str(self.etude['Commune']))
             if "Dossier" in  paragraph.text:
-                paragraph.text = "Dossier :		" + self.etude["Nom d'affaire E-PLAN"]
+                paragraph.text = "Dossier :		" + re.sub('(?<=[0-9]{5})[a-zA-Z0-9-]*$', '', self.etude["Nom d'affaire E-PLAN"])
             if "Plan(s)" in  paragraph.text:
                 paragraph.text = "Plan(s) :		" + (self.etude['N° Plan'] if self.etude['N° Plan'] else '-')
 

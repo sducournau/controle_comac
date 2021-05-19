@@ -385,7 +385,7 @@ class ePlanAutoExportBrut(threading.Thread):
         threading.Thread.__init__(self)
 
         self.ePlanDriver = ePlanDriver(email,password)
-        self.driver = self.ePlanDriver.getDriver()
+        #self.driver = self.ePlanDriver.getDriver()
         self.data = self.ePlanDriver.getData()
         self.dr = dr
         self.operateur = operateur
@@ -400,7 +400,7 @@ class ePlanAutoExportBrut(threading.Thread):
     def run(self):
 
 
-        self.ePlanDriver.authentificate()
+        #self.ePlanDriver.authentificate()
         '''stealth(
             driver = self.driver,
             user_agent= "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
@@ -412,11 +412,11 @@ class ePlanAutoExportBrut(threading.Thread):
             fix_hairline = True,
             run_on_insecure_origins = False
         )'''
-        self.maj_list_dr()
-        self.get_export()
-        self.link_export()
+        #self.maj_list_dr()
+        #self.get_export()
+        #self.link_export()
         self.iterate_over_etudes()
-        self.driver.quit()
+        #self.driver.quit()
         self.Terminated = True
         return True
 
@@ -540,12 +540,12 @@ class ePlanAutoExportBrut(threading.Thread):
         driver = self.driver
 
         for row in self.data:
-            if 'numéro_affaire_enedis' in row.keys():
 
 
-                writer = create_doc.writeDoc(row,self.operateur,self.date,self.departement)
-                writer.replace_text()
-                pdf = writer.save_doc()
+
+            writer = create_doc.writeDoc(row,self.operateur,self.date,self.departement)
+            writer.replace_text()
+            pdf = writer.save_doc()
 
 
                 #driver.get("https://www.e-plans.fr/DemandeAppuisCommuns/List")

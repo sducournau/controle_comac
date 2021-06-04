@@ -1283,7 +1283,7 @@ class list_etudes_obj:
 
             list_supports_total_fibre = self.list_item_etude['Lignes']['Fibre']['Supports_list']
 
-            troncon = None
+
             matchers_name = ['NC','IN','FAC','POT']
             matchers_nature = ['FF', 'FM','FT']
             erreur = ''
@@ -1291,13 +1291,14 @@ class list_etudes_obj:
             if support['Nom']  is None: support['Nom'] = ''
 
             troncon = ''
+            etat = ''
             if [(match) for match in matchers_nature if match in support['Nature']]:
                 support['propriet'] = 'ORANGE'
             else:
                 support['propriet'] = 'ENEDIS'
 
 
-            if re.search('E[0-9]*', support['Nom']): troncon = 'D3'
+
 
             if support['NonCalcule'] == '0' and not [(match) for match in matchers_nature if match in support['Nature']] and (support['Nom'] in list_supports_total_fibre) and not [(match) for match in matchers_name if match in support['Nom']]:
                 troncon = 'D2'

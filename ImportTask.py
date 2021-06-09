@@ -42,8 +42,14 @@ class ImportTask(QgsTask):
                 selected_C6 = self.dockwidget.mComboBox_capft_import_files.checkedItems()
 
             options_export = [self.dockwidget.checkBox_pcm.checkState()]
-            option_repare_pcm = True if self.dockwidget.checkBox_repare_pcm.checkState() == 2 else False
-            option_boitier_fibre = True if self.dockwidget.checkBox_option_boitier.checkState() == 2 else False
+            options = self.dockwidget.mComboBox_comac_import_options.checkedItems()
+            option_repare_pcm = False
+            option_boitier_fibre = False
+            for option in options:
+                if option == "Réparer les coordonnées des PCMS":
+                    option_repare_pcm = True
+                elif option == "Compter RAS + Boitier en D3":
+                    option_boitier_fibre = True
             if len(utils.INPUTS) > 0:
 
                 self.etudes = list_etudes_obj(utils.INPUTS, utils.DIR_OUTPUT, utils.DIR_PLUGIN, self.layer_name,option_repare_pcm,option_boitier_fibre)

@@ -333,7 +333,7 @@ class ePlanAutoDeposeEtude(threading.Thread):
                         filePath = os.path.join(folderName, filename)
                         if 'xls' in filePath and 'ExportComac' in filePath:
                             zipObj.write(filePath,basename(filePath))
-
+            return True
 #        if os.stat(archive).st_size > limit_size:
 #            command = 'gzip -c {} | split -b {} - compressed.gz'.format(archive, limit_size)
 #            os.system(command)
@@ -364,6 +364,7 @@ class ePlanAutoDeposeEtude(threading.Thread):
                             self.log("Archive " + archive + " créée")
 
                             if os.stat(archive).st_size < limit_size:
+                                print(row['INSEE'])
                                 self.depose_etude(row['INSEE'],row["Nom d'affaire E-PLAN"],row['Adresse'],row['Longueur à facturer ENEDIS (absolu)'],row['Nb de Support Enedis'],row['Nb de Support D3'],archive)
                                 self.log(str(i+1))
                                 self.number += 1
@@ -372,7 +373,7 @@ class ePlanAutoDeposeEtude(threading.Thread):
                         else:
                             break
                     except:
-                        continue
+                        print("Code INSEE non trouvé")
 
 
                     break

@@ -846,7 +846,8 @@ class list_etudes_obj:
 
 
                 self.list_item_etude['id'] = self.pcm['id']
-                self.list_item_etude['Etude'] = re.sub('([ a-zA-Z]*)$', '',re.sub('(_V){1}[0-9]{1}', '',re.sub('(-V){1}[0-9]{1}', '' , self.name)))
+                #self.list_item_etude['Etude'] = re.sub('([ a-zA-Z]*)$', '',re.sub('(_V){1}[0-9]{1}', '',re.sub('(-V){1}[0-9]{1}', '' , self.name)))
+                self.list_item_etude['Etude'] = self.name[0:-3]
                 num = re.search('(?<=-)([P]{1})([0-9]{1,2})', self.list_item_etude['Etude'])[0] if re.search('(?<=-)([P]{1})([0-9]{1,2})', self.list_item_etude['Etude']) else 'NONE'
                 if num == 'NONE':
                     num = re.search('(?<=-)([A-Z]*)([0-9]{1,2})$', self.list_item_etude['Etude'])[0] if re.search('(?<=-)([A-Z]*)([0-9]{1,2})$', self.list_item_etude['Etude']) else 'NONE'

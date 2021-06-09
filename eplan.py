@@ -302,18 +302,22 @@ class ePlanAutoDeposeEtude(threading.Thread):
 
             dirPhotos = root + '\\' + row["Nom d'affaire E-PLAN"] + '_Photos'
             zipObj.write(row['pcm'],basename(row['pcm']))
-            zipObj.write(dirPhotos,basename(dirPhotos))
-            for folderName, subfolders, filenames in os.walk(dirPhotos):
-                for filename in filenames:
-                    filePath = os.path.join(folderName, filename)
-                    outfile = filePath
-                    if os.stat(filePath).st_size > size_limit_photo:
-                        print(filePath,os.stat(filePath).st_size)
-                        outfile = self.resize_image(filePath)
+            try:
+                zipObj.write(dirPhotos,basename(dirPhotos))
+                for folderName, subfolders, filenames in os.walk(dirPhotos):
+                    for filename in filenames:
+                        filePath = os.path.join(folderName, filename)
+                        outfile = filePath
+                        if os.stat(filePath).st_size > size_limit_photo:
+                            print(filePath,os.stat(filePath).st_size)
+                            outfile = self.resize_image(filePath)
 
-                    zipObj.write(outfile,basename(dirPhotos) + '\\' + basename(filePath))
-                    if outfile != filePath:
-                        os.remove(outfile)
+                        zipObj.write(outfile,basename(dirPhotos) + '\\' + basename(filePath))
+                        if outfile != filePath:
+                            os.remove(outfile)
+            except:
+                print("Le dossier photos est manquant ou introuvable")
+                return False
 
             for folderName, subfolders, filenames in os.walk(root):
                 for filename in filenames:
@@ -355,15 +359,17 @@ class ePlanAutoDeposeEtude(threading.Thread):
                             os.mkdir(row['path'].replace(row["Nom d'affaire E-PLAN"], 'ARCHIVES_E_PLAN'))
                         archive = row['path'].replace(row["Nom d'affaire E-PLAN"], 'ARCHIVES_E_PLAN') + '\\' +  row["Nom d'affaire E-PLAN"] + '.zip'
                         #shutil.make_archive(archive, 'zip', row['path'])
-                        self.create_zip(row,archive)
-                        self.log("Archive " + archive + " créée")
+                        archived = self.create_zip(row,archive)
+                        if archived:
+                            self.log("Archive " + archive + " créée")
 
-                        if os.stat(archive).st_size < limit_size:
-                            self.depose_etude(row['INSEE'],row["Nom d'affaire E-PLAN"],row['Adresse'],row['Longueur à facturer ENEDIS (absolu)'],row['Nb de Support Enedis'],row['Nb de Support D3'],archive)
-                            #os.remove(archive)
+                            if os.stat(archive).st_size < limit_size:
+                                self.depose_etude(row['INSEE'],row["Nom d'affaire E-PLAN"],row['Adresse'],row['Longueur à facturer ENEDIS (absolu)'],row['Nb de Support Enedis'],row['Nb de Support D3'],archive)
+                                #os.remove(archive)
+                            else:
+                                print(row["Nom d'affaire E-PLAN"], os.stat(archive).st_size)
                         else:
-                            print(row["Nom d'affaire E-PLAN"], os.stat(archive).st_size)
-
+                            break    
                     except:
                         continue
 

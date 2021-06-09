@@ -365,16 +365,16 @@ class ePlanAutoDeposeEtude(threading.Thread):
 
                             if os.stat(archive).st_size < limit_size:
                                 self.depose_etude(row['INSEE'],row["Nom d'affaire E-PLAN"],row['Adresse'],row['Longueur à facturer ENEDIS (absolu)'],row['Nb de Support Enedis'],row['Nb de Support D3'],archive)
-                                #os.remove(archive)
+                                self.log(str(i+1))
+                                self.number += 1
                             else:
                                 print(row["Nom d'affaire E-PLAN"], os.stat(archive).st_size)
                         else:
-                            break    
+                            break
                     except:
                         continue
 
-                    self.log(str(i+1))
-                    self.number += 1
+
                     break
         self.log(str(self.number) + " études ont été importées")
 

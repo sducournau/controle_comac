@@ -1,24 +1,24 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="AllStyleCategories" simplifyDrawingTol="1" maxScale="1000" minScale="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" version="3.16.0-Hannover" simplifyMaxScale="1" labelsEnabled="1" readOnly="0" simplifyDrawingHints="0" simplifyLocal="1">
+<qgis simplifyAlgorithm="0" readOnly="0" version="3.16.3-Hannover" maxScale="1000" simplifyDrawingHints="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" minScale="0" labelsEnabled="1" simplifyDrawingTol="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <temporal accumulate="0" startField="" durationUnit="min" endField="" endExpression="" enabled="0" startExpression="" durationField="" mode="0" fixedDuration="0">
+  <temporal endExpression="" durationField="" enabled="0" accumulate="0" endField="" durationUnit="min" fixedDuration="0" startField="" mode="0" startExpression="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 attr="etat" type="categorizedSymbol" symbollevels="0" enableorderby="0" forceraster="0">
+  <renderer-v2 type="categorizedSymbol" enableorderby="0" forceraster="0" attr="etat" symbollevels="0">
     <categories>
-      <category value="nok" symbol="0" render="true" label="FT-nok"/>
-      <category value="ok" symbol="1" render="true" label="FT-ok"/>
+      <category symbol="0" label="FT-nok" value="nok" render="true"/>
+      <category symbol="1" label="FT-ok" value="ok" render="true"/>
     </categories>
     <symbols>
-      <symbol type="marker" alpha="1" force_rhr="0" clip_to_extent="1" name="0">
-        <layer class="SimpleMarker" locked="0" enabled="1" pass="0">
+      <symbol type="marker" alpha="1" clip_to_extent="1" name="0" force_rhr="0">
+        <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
           <prop v="45" k="angle"/>
           <prop v="254,222,10,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
@@ -39,21 +39,21 @@
           <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option type="QString" value="" name="name"/>
               <Option type="Map" name="properties">
                 <Option type="Map" name="outlineColor">
-                  <Option value="false" type="bool" name="active"/>
-                  <Option value="1" type="int" name="type"/>
-                  <Option value="" type="QString" name="val"/>
+                  <Option type="bool" value="false" name="active"/>
+                  <Option type="int" value="1" name="type"/>
+                  <Option type="QString" value="" name="val"/>
                 </Option>
               </Option>
-              <Option value="collection" type="QString" name="type"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="marker" alpha="1" force_rhr="0" clip_to_extent="1" name="1">
-        <layer class="SimpleMarker" locked="0" enabled="1" pass="0">
+      <symbol type="marker" alpha="1" clip_to_extent="1" name="1" force_rhr="0">
+        <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
           <prop v="45" k="angle"/>
           <prop v="254,222,10,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
@@ -74,23 +74,23 @@
           <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option type="QString" value="" name="name"/>
               <Option type="Map" name="properties">
                 <Option type="Map" name="outlineColor">
-                  <Option value="false" type="bool" name="active"/>
-                  <Option value="1" type="int" name="type"/>
-                  <Option value="" type="QString" name="val"/>
+                  <Option type="bool" value="false" name="active"/>
+                  <Option type="int" value="1" name="type"/>
+                  <Option type="QString" value="" name="val"/>
                 </Option>
               </Option>
-              <Option value="collection" type="QString" name="type"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol type="marker" alpha="1" force_rhr="0" clip_to_extent="1" name="0">
-        <layer class="SimpleMarker" locked="0" enabled="1" pass="0">
+      <symbol type="marker" alpha="1" clip_to_extent="1" name="0" force_rhr="0">
+        <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
           <prop v="45" k="angle"/>
           <prop v="254,222,10,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
@@ -111,15 +111,15 @@
           <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option type="QString" value="" name="name"/>
               <Option type="Map" name="properties">
                 <Option type="Map" name="outlineColor">
-                  <Option value="true" type="bool" name="active"/>
-                  <Option value="if( &quot;etat&quot; ='ok', green, red)" type="QString" name="expression"/>
-                  <Option value="3" type="int" name="type"/>
+                  <Option type="bool" value="true" name="active"/>
+                  <Option type="QString" value="if( &quot;etat&quot; ='ok', green, red)" name="expression"/>
+                  <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
-              <Option value="collection" type="QString" name="type"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -128,244 +128,329 @@
     <rotation/>
     <sizescale/>
   </renderer-v2>
-  <labeling type="simple">
-    <settings calloutType="simple">
-      <text-style blendMode="0" allowHtml="0" fieldName="numero" fontLetterSpacing="0" fontFamily="Segoe UI Semibold" fontItalic="0" fontSize="10" multilineHeight="1" previewBkgrdColor="255,255,255,255" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontStrikeout="0" capitalization="0" fontSizeUnit="Point" fontUnderline="0" useSubstitutions="0" textOrientation="horizontal" fontKerning="1" textOpacity="1" namedStyle="Regular" textColor="255,255,255,255" fontWeight="63" isExpression="0">
-        <text-buffer bufferSize="0" bufferJoinStyle="128" bufferColor="0,0,0,255" bufferNoFill="0" bufferOpacity="1" bufferSizeUnits="MM" bufferDraw="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0"/>
-        <text-mask maskType="0" maskedSymbolLayers="" maskSize="0" maskOpacity="1" maskEnabled="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSizeUnits="MM" maskJoinStyle="128"/>
-        <background shapeOffsetY="0" shapeSizeX="0" shapeFillColor="53,74,94,126" shapeType="0" shapeRadiiUnit="MM" shapeSizeType="0" shapeSizeY="0" shapeDraw="1" shapeBorderWidthUnit="MM" shapeJoinStyle="64" shapeRotationType="0" shapeOffsetUnit="MM" shapeBorderColor="128,128,128,255" shapeRadiiX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeSVGFile="" shapeOffsetX="0" shapeOpacity="1" shapeRotation="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeBorderWidth="0" shapeRadiiY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0">
-          <symbol type="marker" alpha="1" force_rhr="0" clip_to_extent="1" name="markerSymbol">
-            <layer class="SimpleMarker" locked="0" enabled="1" pass="0">
-              <prop v="0" k="angle"/>
-              <prop v="213,180,60,255" k="color"/>
-              <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="circle" k="name"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="diameter" k="scale_method"/>
-              <prop v="2" k="size"/>
-              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-              <prop v="MM" k="size_unit"/>
-              <prop v="1" k="vertical_anchor_point"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
-                  <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+  <labeling type="rule-based">
+    <rules key="{b92e1d4d-77c9-49ab-8a0b-84b678eb642b}">
+      <rule key="{2b9fb9d7-8657-4561-be1a-a13e0c00339a}">
+        <settings calloutType="simple">
+          <text-style blendMode="0" fontWordSpacing="0" fontItalic="0" fontUnderline="0" textOrientation="horizontal" fontSizeUnit="Point" fontKerning="1" multilineHeight="1" fieldName="numero" fontWeight="63" textColor="255,255,255,255" namedStyle="Regular" isExpression="0" previewBkgrdColor="255,255,255,255" fontSize="10" allowHtml="0" fontLetterSpacing="0" textOpacity="1" fontFamily="Segoe UI Semibold" capitalization="0" fontStrikeout="0" useSubstitutions="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0">
+            <text-buffer bufferOpacity="1" bufferSizeUnits="MM" bufferSize="0" bufferDraw="0" bufferColor="0,0,0,255" bufferNoFill="0" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128"/>
+            <text-mask maskType="0" maskOpacity="1" maskedSymbolLayers="" maskSizeUnits="MM" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskJoinStyle="128" maskSize="0"/>
+            <background shapeRotation="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeX="0" shapeOffsetUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeDraw="1" shapeBorderWidth="0" shapeFillColor="53,74,94,126" shapeSVGFile="" shapeOffsetX="0" shapeRadiiUnit="MM" shapeBlendMode="0" shapeSizeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeRotationType="0" shapeOpacity="1" shapeBorderColor="128,128,128,255" shapeBorderWidthUnit="MM">
+              <symbol type="marker" alpha="1" clip_to_extent="1" name="markerSymbol" force_rhr="0">
+                <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
+                  <prop v="0" k="angle"/>
+                  <prop v="213,180,60,255" k="color"/>
+                  <prop v="1" k="horizontal_anchor_point"/>
+                  <prop v="bevel" k="joinstyle"/>
+                  <prop v="circle" k="name"/>
+                  <prop v="0,0" k="offset"/>
+                  <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                  <prop v="MM" k="offset_unit"/>
+                  <prop v="35,35,35,255" k="outline_color"/>
+                  <prop v="solid" k="outline_style"/>
+                  <prop v="0" k="outline_width"/>
+                  <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                  <prop v="MM" k="outline_width_unit"/>
+                  <prop v="diameter" k="scale_method"/>
+                  <prop v="2" k="size"/>
+                  <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                  <prop v="MM" k="size_unit"/>
+                  <prop v="1" k="vertical_anchor_point"/>
+                  <data_defined_properties>
+                    <Option type="Map">
+                      <Option type="QString" value="" name="name"/>
+                      <Option name="properties"/>
+                      <Option type="QString" value="collection" name="type"/>
+                    </Option>
+                  </data_defined_properties>
+                </layer>
+              </symbol>
+            </background>
+            <shadow shadowOffsetAngle="135" shadowRadiusAlphaOnly="0" shadowOffsetGlobal="1" shadowUnder="0" shadowRadiusUnit="MM" shadowScale="100" shadowOffsetUnit="MM" shadowOffsetDist="1" shadowColor="0,0,0,255" shadowDraw="0" shadowOpacity="0" shadowRadius="0" shadowBlendMode="6" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0"/>
+            <dd_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </dd_properties>
+            <substitutions/>
+          </text-style>
+          <text-format decimals="3" useMaxLineLengthForAutoWrap="1" wrapChar="" formatNumbers="0" autoWrapLength="0" rightDirectionSymbol=">" reverseDirectionSymbol="0" addDirectionSymbol="0" plussign="0" placeDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;"/>
+          <placement maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" dist="2" placementFlags="10" repeatDistanceUnits="MM" quadOffset="0" overrunDistanceUnit="MM" offsetType="1" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" lineAnchorPercent="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" priority="5" placement="1" geometryGenerator="" geometryGeneratorEnabled="0" yOffset="-1" geometryGeneratorType="PointGeometry" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" xOffset="-1" layerType="PointGeometry" distUnits="MM" distMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" overrunDistance="0" rotationAngle="0" offsetUnits="MapUnit" centroidWhole="0" polygonPlacementFlags="2" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorType="0"/>
+          <rendering scaleVisibility="1" obstacleType="0" fontMaxPixelSize="10000" maxNumLabels="2000" zIndex="0" upsidedownLabels="0" obstacle="1" obstacleFactor="0" fontLimitPixelSize="0" drawLabels="1" minFeatureSize="0" mergeLines="0" scaleMin="1" displayAll="0" labelPerPart="0" scaleMax="1000" fontMinPixelSize="3" limitNumLabels="0"/>
+          <dd_properties>
+            <Option type="Map">
+              <Option type="QString" value="" name="name"/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="BufferColor">
+                  <Option type="bool" value="true" name="active"/>
+                  <Option type="QString" value="case&#xd;&#xa;when  &quot;Etat&quot; = 'ok' then 'green'&#xd;&#xa;when  &quot;Etat&quot; = 'nok' then 'red'&#xd;&#xa;end" name="expression"/>
+                  <Option type="int" value="3" name="type"/>
                 </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-        </background>
-        <shadow shadowRadius="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowScale="100" shadowBlendMode="6" shadowDraw="0" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowOffsetDist="1" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0" shadowRadiusUnit="MM" shadowOffsetGlobal="1"/>
-        <dd_properties>
-          <Option type="Map">
-            <Option value="" type="QString" name="name"/>
-            <Option name="properties"/>
-            <Option value="collection" type="QString" name="type"/>
-          </Option>
-        </dd_properties>
-        <substitutions/>
-      </text-style>
-      <text-format reverseDirectionSymbol="0" rightDirectionSymbol=">" plussign="0" addDirectionSymbol="0" decimals="3" leftDirectionSymbol="&lt;" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" formatNumbers="0" multilineAlign="3" wrapChar="" autoWrapLength="0"/>
-      <placement overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleOut="-25" geometryGenerator="" distMapUnitScale="3x:0,0,0,0,0,0" yOffset="-1" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" rotationAngle="0" quadOffset="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" priority="5" repeatDistanceUnits="MM" lineAnchorType="0" dist="2" lineAnchorPercent="0" layerType="PointGeometry" repeatDistance="0" geometryGeneratorEnabled="0" geometryGeneratorType="PointGeometry" polygonPlacementFlags="2" centroidWhole="0" overrunDistance="0" overrunDistanceUnit="MM" offsetUnits="MapUnit" centroidInside="0" fitInPolygonOnly="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" xOffset="-1" distUnits="MM" preserveRotation="1" offsetType="1" placement="1" maxCurvedCharAngleIn="25"/>
-      <rendering obstacle="1" labelPerPart="0" fontLimitPixelSize="0" mergeLines="0" obstacleFactor="0" scaleMin="1" displayAll="0" upsidedownLabels="0" limitNumLabels="0" fontMaxPixelSize="10000" zIndex="0" scaleMax="1000" drawLabels="1" minFeatureSize="0" fontMinPixelSize="3" obstacleType="0" scaleVisibility="1" maxNumLabels="2000"/>
-      <dd_properties>
-        <Option type="Map">
-          <Option value="" type="QString" name="name"/>
-          <Option type="Map" name="properties">
-            <Option type="Map" name="BufferColor">
-              <Option value="true" type="bool" name="active"/>
-              <Option value="case&#xd;&#xa;when  &quot;Etat&quot; = 'ok' then 'green'&#xd;&#xa;when  &quot;Etat&quot; = 'nok' then 'red'&#xd;&#xa;end" type="QString" name="expression"/>
-              <Option value="3" type="int" name="type"/>
+                <Option type="Map" name="ShapeFillColor">
+                  <Option type="bool" value="true" name="active"/>
+                  <Option type="QString" value="@symbol_color" name="expression"/>
+                  <Option type="int" value="3" name="type"/>
+                </Option>
+                <Option type="Map" name="ShapeOpacity">
+                  <Option type="bool" value="true" name="active"/>
+                  <Option type="QString" value="60" name="expression"/>
+                  <Option type="int" value="3" name="type"/>
+                </Option>
+              </Option>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
-            <Option type="Map" name="ShapeFillColor">
-              <Option value="true" type="bool" name="active"/>
-              <Option value="@symbol_color" type="QString" name="expression"/>
-              <Option value="3" type="int" name="type"/>
+          </dd_properties>
+          <callout type="simple">
+            <Option type="Map">
+              <Option type="QString" value="pole_of_inaccessibility" name="anchorPoint"/>
+              <Option type="Map" name="ddProperties">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+              <Option type="bool" value="false" name="drawToAllParts"/>
+              <Option type="QString" value="0" name="enabled"/>
+              <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; alpha=&quot;1&quot; clip_to_extent=&quot;1&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot;>&lt;layer enabled=&quot;1&quot; pass=&quot;0&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop v=&quot;0&quot; k=&quot;align_dash_pattern&quot;/>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;dash_pattern_offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;dash_pattern_offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;dash_pattern_offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;tweak_dash_pattern_on_corners&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="double" value="0" name="minLength"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
+              <Option type="QString" value="MM" name="minLengthUnit"/>
+              <Option type="double" value="0" name="offsetFromAnchor"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale"/>
+              <Option type="QString" value="MM" name="offsetFromAnchorUnit"/>
+              <Option type="double" value="0" name="offsetFromLabel"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale"/>
+              <Option type="QString" value="MM" name="offsetFromLabelUnit"/>
             </Option>
-            <Option type="Map" name="ShapeOpacity">
-              <Option value="true" type="bool" name="active"/>
-              <Option value="60" type="QString" name="expression"/>
-              <Option value="3" type="int" name="type"/>
+          </callout>
+        </settings>
+      </rule>
+      <rule filter=" &quot;com_etat&quot; !=  'None' " key="{9b0be2e6-8482-49fc-8cc4-c02a3ba9ef9f}">
+        <settings calloutType="simple">
+          <text-style blendMode="0" fontWordSpacing="0" fontItalic="0" fontUnderline="0" textOrientation="horizontal" fontSizeUnit="Point" fontKerning="1" multilineHeight="1" fieldName="case&#xd;&#xa;when &quot;sup_remp&quot; != 'None' then &quot;com_etat&quot; || ' | ' ||  &quot;sup_remp&quot; &#xd;&#xa;else &quot;com_etat&quot;&#xd;&#xa;end" fontWeight="75" textColor="255,127,0,255" namedStyle="Bold" isExpression="1" previewBkgrdColor="255,255,255,255" fontSize="10" allowHtml="0" fontLetterSpacing="0" textOpacity="1" fontFamily="MS Shell Dlg 2" capitalization="0" fontStrikeout="0" useSubstitutions="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0">
+            <text-buffer bufferOpacity="1" bufferSizeUnits="MM" bufferSize="1" bufferDraw="0" bufferColor="255,255,255,255" bufferNoFill="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128"/>
+            <text-mask maskType="0" maskOpacity="1" maskedSymbolLayers="" maskSizeUnits="MM" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskJoinStyle="128" maskSize="1.5"/>
+            <background shapeRotation="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeX="0" shapeOffsetUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeSVGFile="" shapeOffsetX="0" shapeRadiiUnit="MM" shapeBlendMode="0" shapeSizeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeRotationType="0" shapeOpacity="1" shapeBorderColor="128,128,128,255" shapeBorderWidthUnit="MM">
+              <symbol type="marker" alpha="1" clip_to_extent="1" name="markerSymbol" force_rhr="0">
+                <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
+                  <prop v="0" k="angle"/>
+                  <prop v="133,182,111,255" k="color"/>
+                  <prop v="1" k="horizontal_anchor_point"/>
+                  <prop v="bevel" k="joinstyle"/>
+                  <prop v="circle" k="name"/>
+                  <prop v="0,0" k="offset"/>
+                  <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                  <prop v="MM" k="offset_unit"/>
+                  <prop v="35,35,35,255" k="outline_color"/>
+                  <prop v="solid" k="outline_style"/>
+                  <prop v="0" k="outline_width"/>
+                  <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                  <prop v="MM" k="outline_width_unit"/>
+                  <prop v="diameter" k="scale_method"/>
+                  <prop v="2" k="size"/>
+                  <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                  <prop v="MM" k="size_unit"/>
+                  <prop v="1" k="vertical_anchor_point"/>
+                  <data_defined_properties>
+                    <Option type="Map">
+                      <Option type="QString" value="" name="name"/>
+                      <Option name="properties"/>
+                      <Option type="QString" value="collection" name="type"/>
+                    </Option>
+                  </data_defined_properties>
+                </layer>
+              </symbol>
+            </background>
+            <shadow shadowOffsetAngle="135" shadowRadiusAlphaOnly="0" shadowOffsetGlobal="1" shadowUnder="0" shadowRadiusUnit="MM" shadowScale="100" shadowOffsetUnit="MM" shadowOffsetDist="1" shadowColor="0,0,0,255" shadowDraw="0" shadowOpacity="0.7" shadowRadius="1.5" shadowBlendMode="6" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0"/>
+            <dd_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </dd_properties>
+            <substitutions/>
+          </text-style>
+          <text-format decimals="3" useMaxLineLengthForAutoWrap="1" wrapChar="" formatNumbers="0" autoWrapLength="0" rightDirectionSymbol=">" reverseDirectionSymbol="0" addDirectionSymbol="0" plussign="0" placeDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;"/>
+          <placement maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" dist="0" placementFlags="10" repeatDistanceUnits="MM" quadOffset="4" overrunDistanceUnit="MM" offsetType="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" lineAnchorPercent="0.5" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" priority="5" placement="0" geometryGenerator="" geometryGeneratorEnabled="0" yOffset="0" geometryGeneratorType="PointGeometry" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" xOffset="0" layerType="PointGeometry" distUnits="MM" distMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" overrunDistance="0" rotationAngle="0" offsetUnits="MM" centroidWhole="0" polygonPlacementFlags="2" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorType="0"/>
+          <rendering scaleVisibility="0" obstacleType="1" fontMaxPixelSize="10000" maxNumLabels="2000" zIndex="0" upsidedownLabels="0" obstacle="1" obstacleFactor="1" fontLimitPixelSize="0" drawLabels="1" minFeatureSize="0" mergeLines="0" scaleMin="0" displayAll="0" labelPerPart="0" scaleMax="0" fontMinPixelSize="3" limitNumLabels="0"/>
+          <dd_properties>
+            <Option type="Map">
+              <Option type="QString" value="" name="name"/>
+              <Option name="properties"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
-          </Option>
-          <Option value="collection" type="QString" name="type"/>
-        </Option>
-      </dd_properties>
-      <callout type="simple">
-        <Option type="Map">
-          <Option value="pole_of_inaccessibility" type="QString" name="anchorPoint"/>
-          <Option type="Map" name="ddProperties">
-            <Option value="" type="QString" name="name"/>
-            <Option name="properties"/>
-            <Option value="collection" type="QString" name="type"/>
-          </Option>
-          <Option value="false" type="bool" name="drawToAllParts"/>
-          <Option value="0" type="QString" name="enabled"/>
-          <Option value="point_on_exterior" type="QString" name="labelAnchorPoint"/>
-          <Option value="&lt;symbol type=&quot;line&quot; alpha=&quot;1&quot; force_rhr=&quot;0&quot; clip_to_extent=&quot;1&quot; name=&quot;symbol&quot;>&lt;layer class=&quot;SimpleLine&quot; locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot;>&lt;prop v=&quot;0&quot; k=&quot;align_dash_pattern&quot;/>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;dash_pattern_offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;dash_pattern_offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;dash_pattern_offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;tweak_dash_pattern_on_corners&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString" name="lineSymbol"/>
-          <Option value="0" type="double" name="minLength"/>
-          <Option value="3x:0,0,0,0,0,0" type="QString" name="minLengthMapUnitScale"/>
-          <Option value="MM" type="QString" name="minLengthUnit"/>
-          <Option value="0" type="double" name="offsetFromAnchor"/>
-          <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromAnchorMapUnitScale"/>
-          <Option value="MM" type="QString" name="offsetFromAnchorUnit"/>
-          <Option value="0" type="double" name="offsetFromLabel"/>
-          <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromLabelMapUnitScale"/>
-          <Option value="MM" type="QString" name="offsetFromLabelUnit"/>
-        </Option>
-      </callout>
-    </settings>
+          </dd_properties>
+          <callout type="simple">
+            <Option type="Map">
+              <Option type="QString" value="pole_of_inaccessibility" name="anchorPoint"/>
+              <Option type="Map" name="ddProperties">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+              <Option type="bool" value="false" name="drawToAllParts"/>
+              <Option type="QString" value="0" name="enabled"/>
+              <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; alpha=&quot;1&quot; clip_to_extent=&quot;1&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot;>&lt;layer enabled=&quot;1&quot; pass=&quot;0&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop v=&quot;0&quot; k=&quot;align_dash_pattern&quot;/>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;dash_pattern_offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;dash_pattern_offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;dash_pattern_offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;tweak_dash_pattern_on_corners&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="double" value="0" name="minLength"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
+              <Option type="QString" value="MM" name="minLengthUnit"/>
+              <Option type="double" value="0" name="offsetFromAnchor"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale"/>
+              <Option type="QString" value="MM" name="offsetFromAnchorUnit"/>
+              <Option type="double" value="0" name="offsetFromLabel"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale"/>
+              <Option type="QString" value="MM" name="offsetFromLabelUnit"/>
+            </Option>
+          </callout>
+        </settings>
+      </rule>
+    </rules>
   </labeling>
   <customproperties>
-    <property value="COALESCE( &quot;id&quot;, '&lt;NULL>' )" key="dualview/previewExpressions"/>
-    <property value="transparency" key="embeddedWidgets/0/id"/>
-    <property value="1" key="embeddedWidgets/count"/>
-    <property value="false" key="labeling/addDirectionSymbol"/>
-    <property value="0" key="labeling/angleOffset"/>
-    <property value="0" key="labeling/blendMode"/>
-    <property value="0" key="labeling/bufferBlendMode"/>
-    <property value="255" key="labeling/bufferColorA"/>
-    <property value="255" key="labeling/bufferColorB"/>
-    <property value="255" key="labeling/bufferColorG"/>
-    <property value="255" key="labeling/bufferColorR"/>
-    <property value="false" key="labeling/bufferDraw"/>
-    <property value="128" key="labeling/bufferJoinStyle"/>
-    <property value="false" key="labeling/bufferNoFill"/>
-    <property value="1" key="labeling/bufferSize"/>
-    <property value="false" key="labeling/bufferSizeInMapUnits"/>
-    <property value="0,0,0,0,0,0" key="labeling/bufferSizeMapUnitScale"/>
-    <property value="0" key="labeling/bufferTransp"/>
-    <property value="false" key="labeling/centroidInside"/>
-    <property value="false" key="labeling/centroidWhole"/>
-    <property value="3" key="labeling/decimals"/>
-    <property value="false" key="labeling/displayAll"/>
-    <property value="0" key="labeling/dist"/>
-    <property value="false" key="labeling/distInMapUnits"/>
-    <property value="0,0,0,0,0,0" key="labeling/distMapUnitScale"/>
-    <property value="true" key="labeling/drawLabels"/>
-    <property value="true" key="labeling/enabled"/>
-    <property value="Case  when &quot;TYPE&quot; = 'Appui FT' then &quot;NUMERO&quot;&#xd;&#xa;when &quot;TYPE&quot; = 'Chambre' then &quot;MODELE&quot;&#xd;&#xa;else ''&#xd;&#xa;END" key="labeling/fieldName"/>
-    <property value="false" key="labeling/fitInPolygonOnly"/>
-    <property value="0" key="labeling/fontCapitals"/>
-    <property value="MS Shell Dlg 2" key="labeling/fontFamily"/>
-    <property value="false" key="labeling/fontItalic"/>
-    <property value="0" key="labeling/fontLetterSpacing"/>
-    <property value="false" key="labeling/fontLimitPixelSize"/>
-    <property value="10000" key="labeling/fontMaxPixelSize"/>
-    <property value="3" key="labeling/fontMinPixelSize"/>
-    <property value="8.25" key="labeling/fontSize"/>
-    <property value="false" key="labeling/fontSizeInMapUnits"/>
-    <property value="0,0,0,0,0,0" key="labeling/fontSizeMapUnitScale"/>
-    <property value="false" key="labeling/fontStrikeout"/>
-    <property value="false" key="labeling/fontUnderline"/>
-    <property value="50" key="labeling/fontWeight"/>
-    <property value="0" key="labeling/fontWordSpacing"/>
-    <property value="false" key="labeling/formatNumbers"/>
-    <property value="true" key="labeling/isExpression"/>
-    <property value="true" key="labeling/labelOffsetInMapUnits"/>
-    <property value="0,0,0,0,0,0" key="labeling/labelOffsetMapUnitScale"/>
-    <property value="false" key="labeling/labelPerPart"/>
-    <property value="&lt;" key="labeling/leftDirectionSymbol"/>
-    <property value="false" key="labeling/limitNumLabels"/>
-    <property value="25" key="labeling/maxCurvedCharAngleIn"/>
-    <property value="-25" key="labeling/maxCurvedCharAngleOut"/>
-    <property value="2000" key="labeling/maxNumLabels"/>
-    <property value="false" key="labeling/mergeLines"/>
-    <property value="0" key="labeling/minFeatureSize"/>
-    <property value="3" key="labeling/multilineAlign"/>
-    <property value="1" key="labeling/multilineHeight"/>
-    <property value="Normal" key="labeling/namedStyle"/>
-    <property value="true" key="labeling/obstacle"/>
-    <property value="1" key="labeling/obstacleFactor"/>
-    <property value="0" key="labeling/obstacleType"/>
-    <property value="0" key="labeling/offsetType"/>
-    <property value="0" key="labeling/placeDirectionSymbol"/>
-    <property value="6" key="labeling/placement"/>
-    <property value="10" key="labeling/placementFlags"/>
-    <property value="false" key="labeling/plussign"/>
-    <property value="TR,TL,BR,BL,R,L,TSR,BSR" key="labeling/predefinedPositionOrder"/>
-    <property value="true" key="labeling/preserveRotation"/>
-    <property value="#ffffff" key="labeling/previewBkgrdColor"/>
-    <property value="5" key="labeling/priority"/>
-    <property value="4" key="labeling/quadOffset"/>
-    <property value="0" key="labeling/repeatDistance"/>
-    <property value="0,0,0,0,0,0" key="labeling/repeatDistanceMapUnitScale"/>
-    <property value="1" key="labeling/repeatDistanceUnit"/>
-    <property value="false" key="labeling/reverseDirectionSymbol"/>
-    <property value=">" key="labeling/rightDirectionSymbol"/>
-    <property value="5000" key="labeling/scaleMax"/>
-    <property value="1" key="labeling/scaleMin"/>
-    <property value="true" key="labeling/scaleVisibility"/>
-    <property value="6" key="labeling/shadowBlendMode"/>
-    <property value="0" key="labeling/shadowColorB"/>
-    <property value="0" key="labeling/shadowColorG"/>
-    <property value="0" key="labeling/shadowColorR"/>
-    <property value="false" key="labeling/shadowDraw"/>
-    <property value="135" key="labeling/shadowOffsetAngle"/>
-    <property value="1" key="labeling/shadowOffsetDist"/>
-    <property value="true" key="labeling/shadowOffsetGlobal"/>
-    <property value="0,0,0,0,0,0" key="labeling/shadowOffsetMapUnitScale"/>
-    <property value="1" key="labeling/shadowOffsetUnits"/>
-    <property value="1.5" key="labeling/shadowRadius"/>
-    <property value="false" key="labeling/shadowRadiusAlphaOnly"/>
-    <property value="0,0,0,0,0,0" key="labeling/shadowRadiusMapUnitScale"/>
-    <property value="1" key="labeling/shadowRadiusUnits"/>
-    <property value="100" key="labeling/shadowScale"/>
-    <property value="30" key="labeling/shadowTransparency"/>
-    <property value="0" key="labeling/shadowUnder"/>
-    <property value="0" key="labeling/shapeBlendMode"/>
-    <property value="255" key="labeling/shapeBorderColorA"/>
-    <property value="128" key="labeling/shapeBorderColorB"/>
-    <property value="128" key="labeling/shapeBorderColorG"/>
-    <property value="128" key="labeling/shapeBorderColorR"/>
-    <property value="0" key="labeling/shapeBorderWidth"/>
-    <property value="0,0,0,0,0,0" key="labeling/shapeBorderWidthMapUnitScale"/>
-    <property value="1" key="labeling/shapeBorderWidthUnits"/>
-    <property value="true" key="labeling/shapeDraw"/>
-    <property value="255" key="labeling/shapeFillColorA"/>
-    <property value="255" key="labeling/shapeFillColorB"/>
-    <property value="255" key="labeling/shapeFillColorG"/>
-    <property value="255" key="labeling/shapeFillColorR"/>
-    <property value="64" key="labeling/shapeJoinStyle"/>
-    <property value="0,0,0,0,0,0" key="labeling/shapeOffsetMapUnitScale"/>
-    <property value="1" key="labeling/shapeOffsetUnits"/>
-    <property value="0" key="labeling/shapeOffsetX"/>
-    <property value="0" key="labeling/shapeOffsetY"/>
-    <property value="0,0,0,0,0,0" key="labeling/shapeRadiiMapUnitScale"/>
-    <property value="1" key="labeling/shapeRadiiUnits"/>
-    <property value="0" key="labeling/shapeRadiiX"/>
-    <property value="0" key="labeling/shapeRadiiY"/>
-    <property value="0" key="labeling/shapeRotation"/>
-    <property value="0" key="labeling/shapeRotationType"/>
-    <property value="" key="labeling/shapeSVGFile"/>
-    <property value="0,0,0,0,0,0" key="labeling/shapeSizeMapUnitScale"/>
-    <property value="0" key="labeling/shapeSizeType"/>
-    <property value="1" key="labeling/shapeSizeUnits"/>
-    <property value="0" key="labeling/shapeSizeX"/>
-    <property value="0" key="labeling/shapeSizeY"/>
-    <property value="0" key="labeling/shapeTransparency"/>
-    <property value="0" key="labeling/shapeType"/>
-    <property value="&lt;substitutions/>" key="labeling/substitutions"/>
-    <property value="255" key="labeling/textColorA"/>
-    <property value="0" key="labeling/textColorB"/>
-    <property value="0" key="labeling/textColorG"/>
-    <property value="0" key="labeling/textColorR"/>
-    <property value="0" key="labeling/textTransp"/>
-    <property value="0" key="labeling/upsidedownLabels"/>
-    <property value="false" key="labeling/useSubstitutions"/>
-    <property value="" key="labeling/wrapChar"/>
-    <property value="0" key="labeling/xOffset"/>
-    <property value="0" key="labeling/yOffset"/>
-    <property value="0" key="labeling/zIndex"/>
+    <property key="dualview/previewExpressions" value="COALESCE( &quot;id&quot;, '&lt;NULL>' )"/>
+    <property key="embeddedWidgets/0/id" value="transparency"/>
+    <property key="embeddedWidgets/count" value="1"/>
+    <property key="labeling/addDirectionSymbol" value="false"/>
+    <property key="labeling/angleOffset" value="0"/>
+    <property key="labeling/blendMode" value="0"/>
+    <property key="labeling/bufferBlendMode" value="0"/>
+    <property key="labeling/bufferColorA" value="255"/>
+    <property key="labeling/bufferColorB" value="255"/>
+    <property key="labeling/bufferColorG" value="255"/>
+    <property key="labeling/bufferColorR" value="255"/>
+    <property key="labeling/bufferDraw" value="false"/>
+    <property key="labeling/bufferJoinStyle" value="128"/>
+    <property key="labeling/bufferNoFill" value="false"/>
+    <property key="labeling/bufferSize" value="1"/>
+    <property key="labeling/bufferSizeInMapUnits" value="false"/>
+    <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/bufferTransp" value="0"/>
+    <property key="labeling/centroidInside" value="false"/>
+    <property key="labeling/centroidWhole" value="false"/>
+    <property key="labeling/decimals" value="3"/>
+    <property key="labeling/displayAll" value="false"/>
+    <property key="labeling/dist" value="0"/>
+    <property key="labeling/distInMapUnits" value="false"/>
+    <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/drawLabels" value="true"/>
+    <property key="labeling/enabled" value="true"/>
+    <property key="labeling/fieldName" value="Case  when &quot;TYPE&quot; = 'Appui FT' then &quot;NUMERO&quot;&#xd;&#xa;when &quot;TYPE&quot; = 'Chambre' then &quot;MODELE&quot;&#xd;&#xa;else ''&#xd;&#xa;END"/>
+    <property key="labeling/fitInPolygonOnly" value="false"/>
+    <property key="labeling/fontCapitals" value="0"/>
+    <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+    <property key="labeling/fontItalic" value="false"/>
+    <property key="labeling/fontLetterSpacing" value="0"/>
+    <property key="labeling/fontLimitPixelSize" value="false"/>
+    <property key="labeling/fontMaxPixelSize" value="10000"/>
+    <property key="labeling/fontMinPixelSize" value="3"/>
+    <property key="labeling/fontSize" value="8.25"/>
+    <property key="labeling/fontSizeInMapUnits" value="false"/>
+    <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/fontStrikeout" value="false"/>
+    <property key="labeling/fontUnderline" value="false"/>
+    <property key="labeling/fontWeight" value="50"/>
+    <property key="labeling/fontWordSpacing" value="0"/>
+    <property key="labeling/formatNumbers" value="false"/>
+    <property key="labeling/isExpression" value="true"/>
+    <property key="labeling/labelOffsetInMapUnits" value="true"/>
+    <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/labelPerPart" value="false"/>
+    <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+    <property key="labeling/limitNumLabels" value="false"/>
+    <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+    <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+    <property key="labeling/maxNumLabels" value="2000"/>
+    <property key="labeling/mergeLines" value="false"/>
+    <property key="labeling/minFeatureSize" value="0"/>
+    <property key="labeling/multilineAlign" value="3"/>
+    <property key="labeling/multilineHeight" value="1"/>
+    <property key="labeling/namedStyle" value="Normal"/>
+    <property key="labeling/obstacle" value="true"/>
+    <property key="labeling/obstacleFactor" value="1"/>
+    <property key="labeling/obstacleType" value="0"/>
+    <property key="labeling/offsetType" value="0"/>
+    <property key="labeling/placeDirectionSymbol" value="0"/>
+    <property key="labeling/placement" value="6"/>
+    <property key="labeling/placementFlags" value="10"/>
+    <property key="labeling/plussign" value="false"/>
+    <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+    <property key="labeling/preserveRotation" value="true"/>
+    <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+    <property key="labeling/priority" value="5"/>
+    <property key="labeling/quadOffset" value="4"/>
+    <property key="labeling/repeatDistance" value="0"/>
+    <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/repeatDistanceUnit" value="1"/>
+    <property key="labeling/reverseDirectionSymbol" value="false"/>
+    <property key="labeling/rightDirectionSymbol" value=">"/>
+    <property key="labeling/scaleMax" value="5000"/>
+    <property key="labeling/scaleMin" value="1"/>
+    <property key="labeling/scaleVisibility" value="true"/>
+    <property key="labeling/shadowBlendMode" value="6"/>
+    <property key="labeling/shadowColorB" value="0"/>
+    <property key="labeling/shadowColorG" value="0"/>
+    <property key="labeling/shadowColorR" value="0"/>
+    <property key="labeling/shadowDraw" value="false"/>
+    <property key="labeling/shadowOffsetAngle" value="135"/>
+    <property key="labeling/shadowOffsetDist" value="1"/>
+    <property key="labeling/shadowOffsetGlobal" value="true"/>
+    <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/shadowOffsetUnits" value="1"/>
+    <property key="labeling/shadowRadius" value="1.5"/>
+    <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+    <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/shadowRadiusUnits" value="1"/>
+    <property key="labeling/shadowScale" value="100"/>
+    <property key="labeling/shadowTransparency" value="30"/>
+    <property key="labeling/shadowUnder" value="0"/>
+    <property key="labeling/shapeBlendMode" value="0"/>
+    <property key="labeling/shapeBorderColorA" value="255"/>
+    <property key="labeling/shapeBorderColorB" value="128"/>
+    <property key="labeling/shapeBorderColorG" value="128"/>
+    <property key="labeling/shapeBorderColorR" value="128"/>
+    <property key="labeling/shapeBorderWidth" value="0"/>
+    <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/shapeBorderWidthUnits" value="1"/>
+    <property key="labeling/shapeDraw" value="true"/>
+    <property key="labeling/shapeFillColorA" value="255"/>
+    <property key="labeling/shapeFillColorB" value="255"/>
+    <property key="labeling/shapeFillColorG" value="255"/>
+    <property key="labeling/shapeFillColorR" value="255"/>
+    <property key="labeling/shapeJoinStyle" value="64"/>
+    <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/shapeOffsetUnits" value="1"/>
+    <property key="labeling/shapeOffsetX" value="0"/>
+    <property key="labeling/shapeOffsetY" value="0"/>
+    <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/shapeRadiiUnits" value="1"/>
+    <property key="labeling/shapeRadiiX" value="0"/>
+    <property key="labeling/shapeRadiiY" value="0"/>
+    <property key="labeling/shapeRotation" value="0"/>
+    <property key="labeling/shapeRotationType" value="0"/>
+    <property key="labeling/shapeSVGFile" value=""/>
+    <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/shapeSizeType" value="0"/>
+    <property key="labeling/shapeSizeUnits" value="1"/>
+    <property key="labeling/shapeSizeX" value="0"/>
+    <property key="labeling/shapeSizeY" value="0"/>
+    <property key="labeling/shapeTransparency" value="0"/>
+    <property key="labeling/shapeType" value="0"/>
+    <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+    <property key="labeling/textColorA" value="255"/>
+    <property key="labeling/textColorB" value="0"/>
+    <property key="labeling/textColorG" value="0"/>
+    <property key="labeling/textColorR" value="0"/>
+    <property key="labeling/textTransp" value="0"/>
+    <property key="labeling/upsidedownLabels" value="0"/>
+    <property key="labeling/useSubstitutions" value="false"/>
+    <property key="labeling/wrapChar" value=""/>
+    <property key="labeling/xOffset" value="0"/>
+    <property key="labeling/yOffset" value="0"/>
+    <property key="labeling/zIndex" value="0"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
   </customproperties>
@@ -373,12 +458,12 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory direction="1" opacity="1" penWidth="0" scaleDependency="Area" minScaleDenominator="1000" showAxis="0" penAlpha="255" diagramOrientation="Up" backgroundAlpha="255" height="15" enabled="0" lineSizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" sizeType="MM" spacingUnitScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" spacing="0" width="15" rotationOffset="0" barWidth="5" scaleBasedVisibility="0" lineSizeType="MM" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" spacingUnit="MM" backgroundColor="#ffffff">
+    <DiagramCategory enabled="0" scaleBasedVisibility="0" spacing="0" lineSizeType="MM" minScaleDenominator="1000" backgroundAlpha="255" barWidth="5" width="15" spacingUnit="MM" scaleDependency="Area" rotationOffset="0" direction="1" diagramOrientation="Up" sizeType="MM" labelPlacementMethod="XHeight" maxScaleDenominator="1e+08" opacity="1" penAlpha="255" showAxis="0" backgroundColor="#ffffff" spacingUnitScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" height="15" lineSizeScale="3x:0,0,0,0,0,0" minimumSize="0" penColor="#000000" penWidth="0">
       <fontProperties style="" description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0"/>
-      <attribute field="" color="#000000" label=""/>
+      <attribute label="" field="" color="#000000"/>
       <axisSymbol>
-        <symbol type="line" alpha="1" force_rhr="0" clip_to_extent="1" name="">
-          <layer class="SimpleLine" locked="0" enabled="1" pass="0">
+        <symbol type="line" alpha="1" clip_to_extent="1" name="" force_rhr="0">
+          <layer enabled="1" pass="0" locked="0" class="SimpleLine">
             <prop v="0" k="align_dash_pattern"/>
             <prop v="square" k="capstyle"/>
             <prop v="5;2" k="customdash"/>
@@ -402,9 +487,9 @@
             <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" type="QString" name="name"/>
+                <Option type="QString" value="" name="name"/>
                 <Option name="properties"/>
-                <Option value="collection" type="QString" name="type"/>
+                <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -412,28 +497,28 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings obstacle="0" zIndex="0" priority="0" dist="0" linePlacementFlags="2" placement="0" showAll="1">
+  <DiagramLayerSettings placement="0" linePlacementFlags="2" showAll="1" zIndex="0" dist="0" priority="0" obstacle="0">
     <properties>
       <Option type="Map">
-        <Option value="" type="QString" name="name"/>
+        <Option type="QString" value="" name="name"/>
         <Option type="Map" name="properties">
           <Option type="Map" name="positionX">
-            <Option value="true" type="bool" name="active"/>
-            <Option value="code_id" type="QString" name="field"/>
-            <Option value="2" type="int" name="type"/>
+            <Option type="bool" value="true" name="active"/>
+            <Option type="QString" value="code_id" name="field"/>
+            <Option type="int" value="2" name="type"/>
           </Option>
           <Option type="Map" name="positionY">
-            <Option value="true" type="bool" name="active"/>
-            <Option value="code_id" type="QString" name="field"/>
-            <Option value="2" type="int" name="type"/>
+            <Option type="bool" value="true" name="active"/>
+            <Option type="QString" value="code_id" name="field"/>
+            <Option type="int" value="2" name="type"/>
           </Option>
           <Option type="Map" name="show">
-            <Option value="true" type="bool" name="active"/>
-            <Option value="code_id" type="QString" name="field"/>
-            <Option value="2" type="int" name="type"/>
+            <Option type="bool" value="true" name="active"/>
+            <Option type="QString" value="code_id" name="field"/>
+            <Option type="int" value="2" name="type"/>
           </Option>
         </Option>
-        <Option value="collection" type="QString" name="type"/>
+        <Option type="QString" value="collection" name="type"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
@@ -444,13 +529,6 @@
   <legend type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field configurationFlags="None" name="fid">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
     <field configurationFlags="None" name="NRO">
       <editWidget type="TextEdit">
         <config>
@@ -542,6 +620,20 @@
         </config>
       </editWidget>
     </field>
+    <field configurationFlags="None" name="h_traverse">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="commentair">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field configurationFlags="None" name="N° appui">
       <editWidget type="TextEdit">
         <config>
@@ -584,7 +676,7 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="Contrôle verticalité OK">
+    <field configurationFlags="None" name="Contrôle verticalité OK et absence étiquette orange">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -626,7 +718,7 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="Absence étiquette jaune ou orange">
+    <field configurationFlags="None" name="Absence étiquette jaune">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -859,68 +951,68 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="fid" index="0" name=""/>
-    <alias field="NRO" index="1" name=""/>
-    <alias field="PMZ" index="2" name=""/>
-    <alias field="Etude" index="3" name=""/>
-    <alias field="nom_norma" index="4" name=""/>
-    <alias field="controle_visuel" index="5" name=""/>
-    <alias field="controle_calcul" index="6" name=""/>
-    <alias field="etat" index="7" name=""/>
-    <alias field="ban_vert" index="8" name=""/>
-    <alias field="modele" index="9" name=""/>
-    <alias field="sup_remp" index="10" name=""/>
-    <alias field="numero" index="11" name=""/>
-    <alias field="com_etat" index="12" name=""/>
-    <alias field="propriet" index="13" name=""/>
-    <alias field="N° appui" index="14" name=""/>
-    <alias field="Type d appui (format GESPOT)" index="15" name=""/>
-    <alias field="Adresse de l appui (N°, rue ou lieu dit)" index="16" name=""/>
-    <alias field="Latitude (WGS84)" index="17" name=""/>
-    <alias field="Longitude (WGS84)" index="18" name=""/>
-    <alias field="Contrôle visuel OK" index="19" name=""/>
-    <alias field="Contrôle verticalité OK" index="20" name=""/>
-    <alias field="Contrôle flamblement OK" index="21" name=""/>
-    <alias field="Respect voisinage réseau électrique" index="22" name=""/>
-    <alias field="Contrôle pointe carrée OK" index="23" name=""/>
-    <alias field="Contrôle secousses OK" index="24" name=""/>
-    <alias field="Contrôle percussion OK" index="25" name=""/>
-    <alias field="Absence étiquette jaune ou orange" index="26" name=""/>
-    <alias field="Appui utilisable en l état" index="27" name=""/>
-    <alias field="Milieu environnant de l appui" index="28" name=""/>
-    <alias field="Voisinage électrique appui" index="29" name=""/>
-    <alias field="Appui stratégique" index="30" name=""/>
-    <alias field="Appui inaccessible véhicule" index="31" name=""/>
-    <alias field="Nom du câble" index="32" name=""/>
-    <alias field="Longueur portée" index="33" name=""/>
-    <alias field="Angle en grade" index="34" name=""/>
-    <alias field="Hauteur nappe" index="35" name=""/>
-    <alias field="Hauteur de flèche portée" index="36" name=""/>
-    <alias field="Température du relevé flèche" index="37" name=""/>
-    <alias field="N° appui destination" index="38" name=""/>
-    <alias field="Forfait cuivre" index="39" name=""/>
-    <alias field="Forfait optique" index="40" name=""/>
-    <alias field="Effort disponible avant ajout câble" index="41" name=""/>
-    <alias field="Effort disponible après ajout câble" index="42" name=""/>
-    <alias field="Effort disponible Nouveau support" index="43" name=""/>
-    <alias field="Type d appui avant travaux" index="44" name=""/>
-    <alias field="Nature des travaux" index="45" name=""/>
-    <alias field="Type d appui aprés travaux" index="46" name=""/>
-    <alias field="Nombre de poteau commandé" index="47" name=""/>
-    <alias field="Installation réhausse" index="48" name=""/>
-    <alias field="Pose d un boitier optique" index="49" name=""/>
-    <alias field="Nombre de boitiers sur l appui" index="50" name=""/>
-    <alias field="transition souterraine" index="51" name=""/>
-    <alias field="Distance avec transition existante" index="52" name=""/>
-    <alias field="Installation dispositif de lovage" index="53" name=""/>
-    <alias field="za_nro" index="54" name=""/>
-    <alias field="za_zpm" index="55" name=""/>
-    <alias field="code_insee" index="56" name=""/>
-    <alias field="numero_appuis_capft" index="57" name=""/>
-    <alias field="Remplace" index="58" name=""/>
+    <alias index="0" field="NRO" name=""/>
+    <alias index="1" field="PMZ" name=""/>
+    <alias index="2" field="Etude" name=""/>
+    <alias index="3" field="nom_norma" name=""/>
+    <alias index="4" field="controle_visuel" name=""/>
+    <alias index="5" field="controle_calcul" name=""/>
+    <alias index="6" field="etat" name=""/>
+    <alias index="7" field="ban_vert" name=""/>
+    <alias index="8" field="modele" name=""/>
+    <alias index="9" field="sup_remp" name=""/>
+    <alias index="10" field="numero" name=""/>
+    <alias index="11" field="com_etat" name=""/>
+    <alias index="12" field="propriet" name=""/>
+    <alias index="13" field="h_traverse" name=""/>
+    <alias index="14" field="commentair" name=""/>
+    <alias index="15" field="N° appui" name=""/>
+    <alias index="16" field="Type d appui (format GESPOT)" name=""/>
+    <alias index="17" field="Adresse de l appui (N°, rue ou lieu dit)" name=""/>
+    <alias index="18" field="Latitude (WGS84)" name=""/>
+    <alias index="19" field="Longitude (WGS84)" name=""/>
+    <alias index="20" field="Contrôle visuel OK" name=""/>
+    <alias index="21" field="Contrôle verticalité OK et absence étiquette orange" name=""/>
+    <alias index="22" field="Contrôle flamblement OK" name=""/>
+    <alias index="23" field="Respect voisinage réseau électrique" name=""/>
+    <alias index="24" field="Contrôle pointe carrée OK" name=""/>
+    <alias index="25" field="Contrôle secousses OK" name=""/>
+    <alias index="26" field="Contrôle percussion OK" name=""/>
+    <alias index="27" field="Absence étiquette jaune" name=""/>
+    <alias index="28" field="Appui utilisable en l état" name=""/>
+    <alias index="29" field="Milieu environnant de l appui" name=""/>
+    <alias index="30" field="Voisinage électrique appui" name=""/>
+    <alias index="31" field="Appui stratégique" name=""/>
+    <alias index="32" field="Appui inaccessible véhicule" name=""/>
+    <alias index="33" field="Nom du câble" name=""/>
+    <alias index="34" field="Longueur portée" name=""/>
+    <alias index="35" field="Angle en grade" name=""/>
+    <alias index="36" field="Hauteur nappe" name=""/>
+    <alias index="37" field="Hauteur de flèche portée" name=""/>
+    <alias index="38" field="Température du relevé flèche" name=""/>
+    <alias index="39" field="N° appui destination" name=""/>
+    <alias index="40" field="Forfait cuivre" name=""/>
+    <alias index="41" field="Forfait optique" name=""/>
+    <alias index="42" field="Effort disponible avant ajout câble" name=""/>
+    <alias index="43" field="Effort disponible après ajout câble" name=""/>
+    <alias index="44" field="Effort disponible Nouveau support" name=""/>
+    <alias index="45" field="Type d appui avant travaux" name=""/>
+    <alias index="46" field="Nature des travaux" name=""/>
+    <alias index="47" field="Type d appui aprés travaux" name=""/>
+    <alias index="48" field="Nombre de poteau commandé" name=""/>
+    <alias index="49" field="Installation réhausse" name=""/>
+    <alias index="50" field="Pose d un boitier optique" name=""/>
+    <alias index="51" field="Nombre de boitiers sur l appui" name=""/>
+    <alias index="52" field="transition souterraine" name=""/>
+    <alias index="53" field="Distance avec transition existante" name=""/>
+    <alias index="54" field="Installation dispositif de lovage" name=""/>
+    <alias index="55" field="za_nro" name=""/>
+    <alias index="56" field="za_zpm" name=""/>
+    <alias index="57" field="code_insee" name=""/>
+    <alias index="58" field="numero_appuis_capft" name=""/>
+    <alias index="59" field="Remplace" name=""/>
   </aliases>
   <defaults>
-    <default expression="" applyOnUpdate="0" field="fid"/>
     <default expression="" applyOnUpdate="0" field="NRO"/>
     <default expression="" applyOnUpdate="0" field="PMZ"/>
     <default expression="" applyOnUpdate="0" field="Etude"/>
@@ -934,19 +1026,21 @@
     <default expression="" applyOnUpdate="0" field="numero"/>
     <default expression="" applyOnUpdate="0" field="com_etat"/>
     <default expression="" applyOnUpdate="0" field="propriet"/>
+    <default expression="" applyOnUpdate="0" field="h_traverse"/>
+    <default expression="" applyOnUpdate="0" field="commentair"/>
     <default expression="" applyOnUpdate="0" field="N° appui"/>
     <default expression="" applyOnUpdate="0" field="Type d appui (format GESPOT)"/>
     <default expression="" applyOnUpdate="0" field="Adresse de l appui (N°, rue ou lieu dit)"/>
     <default expression="" applyOnUpdate="0" field="Latitude (WGS84)"/>
     <default expression="" applyOnUpdate="0" field="Longitude (WGS84)"/>
     <default expression="" applyOnUpdate="0" field="Contrôle visuel OK"/>
-    <default expression="" applyOnUpdate="0" field="Contrôle verticalité OK"/>
+    <default expression="" applyOnUpdate="0" field="Contrôle verticalité OK et absence étiquette orange"/>
     <default expression="" applyOnUpdate="0" field="Contrôle flamblement OK"/>
     <default expression="" applyOnUpdate="0" field="Respect voisinage réseau électrique"/>
     <default expression="" applyOnUpdate="0" field="Contrôle pointe carrée OK"/>
     <default expression="" applyOnUpdate="0" field="Contrôle secousses OK"/>
     <default expression="" applyOnUpdate="0" field="Contrôle percussion OK"/>
-    <default expression="" applyOnUpdate="0" field="Absence étiquette jaune ou orange"/>
+    <default expression="" applyOnUpdate="0" field="Absence étiquette jaune"/>
     <default expression="" applyOnUpdate="0" field="Appui utilisable en l état"/>
     <default expression="" applyOnUpdate="0" field="Milieu environnant de l appui"/>
     <default expression="" applyOnUpdate="0" field="Voisinage électrique appui"/>
@@ -981,203 +1075,206 @@
     <default expression="" applyOnUpdate="0" field="Remplace"/>
   </defaults>
   <constraints>
-    <constraint field="fid" unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1"/>
-    <constraint field="NRO" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="PMZ" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Etude" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="nom_norma" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="controle_visuel" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="controle_calcul" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="etat" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="ban_vert" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="modele" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="sup_remp" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="numero" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="com_etat" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="propriet" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="N° appui" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Type d appui (format GESPOT)" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Adresse de l appui (N°, rue ou lieu dit)" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Latitude (WGS84)" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Longitude (WGS84)" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Contrôle visuel OK" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Contrôle verticalité OK" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Contrôle flamblement OK" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Respect voisinage réseau électrique" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Contrôle pointe carrée OK" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Contrôle secousses OK" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Contrôle percussion OK" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Absence étiquette jaune ou orange" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Appui utilisable en l état" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Milieu environnant de l appui" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Voisinage électrique appui" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Appui stratégique" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Appui inaccessible véhicule" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Nom du câble" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Longueur portée" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Angle en grade" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Hauteur nappe" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Hauteur de flèche portée" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Température du relevé flèche" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="N° appui destination" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Forfait cuivre" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Forfait optique" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Effort disponible avant ajout câble" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Effort disponible après ajout câble" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Effort disponible Nouveau support" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Type d appui avant travaux" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Nature des travaux" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Type d appui aprés travaux" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Nombre de poteau commandé" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Installation réhausse" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Pose d un boitier optique" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Nombre de boitiers sur l appui" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="transition souterraine" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Distance avec transition existante" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Installation dispositif de lovage" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="za_nro" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="za_zpm" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="code_insee" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="numero_appuis_capft" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint field="Remplace" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="NRO" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="PMZ" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Etude" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="nom_norma" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="controle_visuel" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="controle_calcul" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="etat" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="ban_vert" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="modele" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="sup_remp" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="numero" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="com_etat" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="propriet" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="h_traverse" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="commentair" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="N° appui" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Type d appui (format GESPOT)" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Adresse de l appui (N°, rue ou lieu dit)" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Latitude (WGS84)" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Longitude (WGS84)" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Contrôle visuel OK" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Contrôle verticalité OK et absence étiquette orange" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Contrôle flamblement OK" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Respect voisinage réseau électrique" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Contrôle pointe carrée OK" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Contrôle secousses OK" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Contrôle percussion OK" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Absence étiquette jaune" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Appui utilisable en l état" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Milieu environnant de l appui" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Voisinage électrique appui" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Appui stratégique" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Appui inaccessible véhicule" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Nom du câble" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Longueur portée" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Angle en grade" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Hauteur nappe" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Hauteur de flèche portée" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Température du relevé flèche" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="N° appui destination" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Forfait cuivre" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Forfait optique" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Effort disponible avant ajout câble" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Effort disponible après ajout câble" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Effort disponible Nouveau support" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Type d appui avant travaux" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Nature des travaux" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Type d appui aprés travaux" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Nombre de poteau commandé" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Installation réhausse" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Pose d un boitier optique" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Nombre de boitiers sur l appui" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="transition souterraine" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Distance avec transition existante" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Installation dispositif de lovage" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="za_nro" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="za_zpm" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="code_insee" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="numero_appuis_capft" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="Remplace" exp_strength="0" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" field="fid" exp=""/>
-    <constraint desc="" field="NRO" exp=""/>
-    <constraint desc="" field="PMZ" exp=""/>
-    <constraint desc="" field="Etude" exp=""/>
-    <constraint desc="" field="nom_norma" exp=""/>
-    <constraint desc="" field="controle_visuel" exp=""/>
-    <constraint desc="" field="controle_calcul" exp=""/>
-    <constraint desc="" field="etat" exp=""/>
-    <constraint desc="" field="ban_vert" exp=""/>
-    <constraint desc="" field="modele" exp=""/>
-    <constraint desc="" field="sup_remp" exp=""/>
-    <constraint desc="" field="numero" exp=""/>
-    <constraint desc="" field="com_etat" exp=""/>
-    <constraint desc="" field="propriet" exp=""/>
-    <constraint desc="" field="N° appui" exp=""/>
-    <constraint desc="" field="Type d appui (format GESPOT)" exp=""/>
-    <constraint desc="" field="Adresse de l appui (N°, rue ou lieu dit)" exp=""/>
-    <constraint desc="" field="Latitude (WGS84)" exp=""/>
-    <constraint desc="" field="Longitude (WGS84)" exp=""/>
-    <constraint desc="" field="Contrôle visuel OK" exp=""/>
-    <constraint desc="" field="Contrôle verticalité OK" exp=""/>
-    <constraint desc="" field="Contrôle flamblement OK" exp=""/>
-    <constraint desc="" field="Respect voisinage réseau électrique" exp=""/>
-    <constraint desc="" field="Contrôle pointe carrée OK" exp=""/>
-    <constraint desc="" field="Contrôle secousses OK" exp=""/>
-    <constraint desc="" field="Contrôle percussion OK" exp=""/>
-    <constraint desc="" field="Absence étiquette jaune ou orange" exp=""/>
-    <constraint desc="" field="Appui utilisable en l état" exp=""/>
-    <constraint desc="" field="Milieu environnant de l appui" exp=""/>
-    <constraint desc="" field="Voisinage électrique appui" exp=""/>
-    <constraint desc="" field="Appui stratégique" exp=""/>
-    <constraint desc="" field="Appui inaccessible véhicule" exp=""/>
-    <constraint desc="" field="Nom du câble" exp=""/>
-    <constraint desc="" field="Longueur portée" exp=""/>
-    <constraint desc="" field="Angle en grade" exp=""/>
-    <constraint desc="" field="Hauteur nappe" exp=""/>
-    <constraint desc="" field="Hauteur de flèche portée" exp=""/>
-    <constraint desc="" field="Température du relevé flèche" exp=""/>
-    <constraint desc="" field="N° appui destination" exp=""/>
-    <constraint desc="" field="Forfait cuivre" exp=""/>
-    <constraint desc="" field="Forfait optique" exp=""/>
-    <constraint desc="" field="Effort disponible avant ajout câble" exp=""/>
-    <constraint desc="" field="Effort disponible après ajout câble" exp=""/>
-    <constraint desc="" field="Effort disponible Nouveau support" exp=""/>
-    <constraint desc="" field="Type d appui avant travaux" exp=""/>
-    <constraint desc="" field="Nature des travaux" exp=""/>
-    <constraint desc="" field="Type d appui aprés travaux" exp=""/>
-    <constraint desc="" field="Nombre de poteau commandé" exp=""/>
-    <constraint desc="" field="Installation réhausse" exp=""/>
-    <constraint desc="" field="Pose d un boitier optique" exp=""/>
-    <constraint desc="" field="Nombre de boitiers sur l appui" exp=""/>
-    <constraint desc="" field="transition souterraine" exp=""/>
-    <constraint desc="" field="Distance avec transition existante" exp=""/>
-    <constraint desc="" field="Installation dispositif de lovage" exp=""/>
-    <constraint desc="" field="za_nro" exp=""/>
-    <constraint desc="" field="za_zpm" exp=""/>
-    <constraint desc="" field="code_insee" exp=""/>
-    <constraint desc="" field="numero_appuis_capft" exp=""/>
-    <constraint desc="" field="Remplace" exp=""/>
+    <constraint field="NRO" desc="" exp=""/>
+    <constraint field="PMZ" desc="" exp=""/>
+    <constraint field="Etude" desc="" exp=""/>
+    <constraint field="nom_norma" desc="" exp=""/>
+    <constraint field="controle_visuel" desc="" exp=""/>
+    <constraint field="controle_calcul" desc="" exp=""/>
+    <constraint field="etat" desc="" exp=""/>
+    <constraint field="ban_vert" desc="" exp=""/>
+    <constraint field="modele" desc="" exp=""/>
+    <constraint field="sup_remp" desc="" exp=""/>
+    <constraint field="numero" desc="" exp=""/>
+    <constraint field="com_etat" desc="" exp=""/>
+    <constraint field="propriet" desc="" exp=""/>
+    <constraint field="h_traverse" desc="" exp=""/>
+    <constraint field="commentair" desc="" exp=""/>
+    <constraint field="N° appui" desc="" exp=""/>
+    <constraint field="Type d appui (format GESPOT)" desc="" exp=""/>
+    <constraint field="Adresse de l appui (N°, rue ou lieu dit)" desc="" exp=""/>
+    <constraint field="Latitude (WGS84)" desc="" exp=""/>
+    <constraint field="Longitude (WGS84)" desc="" exp=""/>
+    <constraint field="Contrôle visuel OK" desc="" exp=""/>
+    <constraint field="Contrôle verticalité OK et absence étiquette orange" desc="" exp=""/>
+    <constraint field="Contrôle flamblement OK" desc="" exp=""/>
+    <constraint field="Respect voisinage réseau électrique" desc="" exp=""/>
+    <constraint field="Contrôle pointe carrée OK" desc="" exp=""/>
+    <constraint field="Contrôle secousses OK" desc="" exp=""/>
+    <constraint field="Contrôle percussion OK" desc="" exp=""/>
+    <constraint field="Absence étiquette jaune" desc="" exp=""/>
+    <constraint field="Appui utilisable en l état" desc="" exp=""/>
+    <constraint field="Milieu environnant de l appui" desc="" exp=""/>
+    <constraint field="Voisinage électrique appui" desc="" exp=""/>
+    <constraint field="Appui stratégique" desc="" exp=""/>
+    <constraint field="Appui inaccessible véhicule" desc="" exp=""/>
+    <constraint field="Nom du câble" desc="" exp=""/>
+    <constraint field="Longueur portée" desc="" exp=""/>
+    <constraint field="Angle en grade" desc="" exp=""/>
+    <constraint field="Hauteur nappe" desc="" exp=""/>
+    <constraint field="Hauteur de flèche portée" desc="" exp=""/>
+    <constraint field="Température du relevé flèche" desc="" exp=""/>
+    <constraint field="N° appui destination" desc="" exp=""/>
+    <constraint field="Forfait cuivre" desc="" exp=""/>
+    <constraint field="Forfait optique" desc="" exp=""/>
+    <constraint field="Effort disponible avant ajout câble" desc="" exp=""/>
+    <constraint field="Effort disponible après ajout câble" desc="" exp=""/>
+    <constraint field="Effort disponible Nouveau support" desc="" exp=""/>
+    <constraint field="Type d appui avant travaux" desc="" exp=""/>
+    <constraint field="Nature des travaux" desc="" exp=""/>
+    <constraint field="Type d appui aprés travaux" desc="" exp=""/>
+    <constraint field="Nombre de poteau commandé" desc="" exp=""/>
+    <constraint field="Installation réhausse" desc="" exp=""/>
+    <constraint field="Pose d un boitier optique" desc="" exp=""/>
+    <constraint field="Nombre de boitiers sur l appui" desc="" exp=""/>
+    <constraint field="transition souterraine" desc="" exp=""/>
+    <constraint field="Distance avec transition existante" desc="" exp=""/>
+    <constraint field="Installation dispositif de lovage" desc="" exp=""/>
+    <constraint field="za_nro" desc="" exp=""/>
+    <constraint field="za_zpm" desc="" exp=""/>
+    <constraint field="code_insee" desc="" exp=""/>
+    <constraint field="numero_appuis_capft" desc="" exp=""/>
+    <constraint field="Remplace" desc="" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction value="{d7a1f33e-b917-4b64-90b8-af2522776c9b}" key="Canvas"/>
-    <actionsetting type="0" notificationMessage="" shortTitle="" action="" icon="" capture="0" id="{fd53406b-db55-4b3d-85fe-561a149c9b9c}" name="" isEnabledOnlyWhenEditable="0">
+    <defaultAction key="Canvas" value="{ca6af001-4536-44b3-81b9-66fd3bdac3ae}"/>
+    <actionsetting type="0" id="{dd637d3b-40ac-434d-9277-a553ab508b1b}" capture="0" icon="" isEnabledOnlyWhenEditable="0" action="" notificationMessage="" shortTitle="" name="">
+      <actionScope id="Field"/>
       <actionScope id="Canvas"/>
       <actionScope id="Feature"/>
-      <actionScope id="Field"/>
     </actionsetting>
-    <actionsetting type="0" notificationMessage="" shortTitle="" action="" icon="" capture="0" id="{9c938b79-ee7e-4bf4-86fd-2a3e3803254b}" name="" isEnabledOnlyWhenEditable="0">
+    <actionsetting type="0" id="{ab4ad423-21ff-44da-b6c5-e60433e1b8cd}" capture="0" icon="" isEnabledOnlyWhenEditable="0" action="" notificationMessage="" shortTitle="" name="">
+      <actionScope id="Field"/>
       <actionScope id="Canvas"/>
       <actionScope id="Feature"/>
-      <actionScope id="Field"/>
     </actionsetting>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="1" sortExpression="&quot;type&quot;">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;type&quot;" sortOrder="1">
     <columns>
       <column type="actions" hidden="1" width="-1"/>
-      <column type="field" hidden="0" width="-1" name="numero"/>
-      <column type="field" hidden="0" width="-1" name="N° appui"/>
-      <column type="field" hidden="0" width="-1" name="Latitude (WGS84)"/>
-      <column type="field" hidden="0" width="-1" name="Longitude (WGS84)"/>
-      <column type="field" hidden="0" width="-1" name="Contrôle visuel OK"/>
-      <column type="field" hidden="0" width="-1" name="Contrôle flamblement OK"/>
-      <column type="field" hidden="0" width="-1" name="Respect voisinage réseau électrique"/>
-      <column type="field" hidden="0" width="-1" name="Contrôle pointe carrée OK"/>
-      <column type="field" hidden="0" width="-1" name="Contrôle secousses OK"/>
-      <column type="field" hidden="0" width="-1" name="Contrôle percussion OK"/>
-      <column type="field" hidden="0" width="-1" name="Voisinage électrique appui"/>
-      <column type="field" hidden="0" width="-1" name="Appui stratégique"/>
-      <column type="field" hidden="0" width="-1" name="Appui inaccessible véhicule"/>
-      <column type="field" hidden="0" width="-1" name="Nom du câble"/>
-      <column type="field" hidden="0" width="-1" name="Longueur portée"/>
-      <column type="field" hidden="0" width="-1" name="Angle en grade"/>
-      <column type="field" hidden="0" width="-1" name="Hauteur nappe"/>
-      <column type="field" hidden="0" width="-1" name="Hauteur de flèche portée"/>
-      <column type="field" hidden="0" width="-1" name="Température du relevé flèche"/>
-      <column type="field" hidden="0" width="-1" name="N° appui destination"/>
-      <column type="field" hidden="0" width="-1" name="Forfait cuivre"/>
-      <column type="field" hidden="0" width="-1" name="Forfait optique"/>
-      <column type="field" hidden="0" width="-1" name="Effort disponible avant ajout câble"/>
-      <column type="field" hidden="0" width="-1" name="Effort disponible après ajout câble"/>
-      <column type="field" hidden="0" width="-1" name="Effort disponible Nouveau support"/>
-      <column type="field" hidden="0" width="-1" name="Nature des travaux"/>
-      <column type="field" hidden="0" width="-1" name="Nombre de poteau commandé"/>
-      <column type="field" hidden="0" width="-1" name="Installation réhausse"/>
-      <column type="field" hidden="0" width="-1" name="transition souterraine"/>
-      <column type="field" hidden="0" width="-1" name="Distance avec transition existante"/>
-      <column type="field" hidden="0" width="-1" name="Installation dispositif de lovage"/>
-      <column type="field" hidden="0" width="-1" name="za_zpm"/>
-      <column type="field" hidden="0" width="-1" name="za_nro"/>
-      <column type="field" hidden="0" width="-1" name="code_insee"/>
-      <column type="field" hidden="0" width="-1" name="fid"/>
-      <column type="field" hidden="0" width="-1" name="nom_norma"/>
-      <column type="field" hidden="0" width="-1" name="controle_visuel"/>
-      <column type="field" hidden="0" width="-1" name="controle_calcul"/>
-      <column type="field" hidden="0" width="-1" name="etat"/>
-      <column type="field" hidden="0" width="-1" name="ban_vert"/>
-      <column type="field" hidden="0" width="-1" name="modele"/>
-      <column type="field" hidden="0" width="-1" name="sup_remp"/>
-      <column type="field" hidden="0" width="-1" name="com_etat"/>
-      <column type="field" hidden="0" width="-1" name="Type d appui (format GESPOT)"/>
-      <column type="field" hidden="0" width="-1" name="Adresse de l appui (N°, rue ou lieu dit)"/>
-      <column type="field" hidden="0" width="-1" name="Appui utilisable en l état"/>
-      <column type="field" hidden="0" width="-1" name="Milieu environnant de l appui"/>
-      <column type="field" hidden="0" width="-1" name="Type d appui avant travaux"/>
-      <column type="field" hidden="0" width="-1" name="Type d appui aprés travaux"/>
-      <column type="field" hidden="0" width="-1" name="Pose d un boitier optique"/>
-      <column type="field" hidden="0" width="-1" name="Nombre de boitiers sur l appui"/>
-      <column type="field" hidden="0" width="-1" name="numero_appuis_capft"/>
-      <column type="field" hidden="0" width="-1" name="NRO"/>
-      <column type="field" hidden="0" width="-1" name="PMZ"/>
-      <column type="field" hidden="0" width="-1" name="Etude"/>
-      <column type="field" hidden="0" width="-1" name="propriet"/>
-      <column type="field" hidden="0" width="-1" name="Contrôle verticalité OK"/>
-      <column type="field" hidden="0" width="-1" name="Absence étiquette jaune ou orange"/>
-      <column type="field" hidden="0" width="-1" name="Remplace"/>
+      <column type="field" hidden="0" name="numero" width="-1"/>
+      <column type="field" hidden="0" name="N° appui" width="-1"/>
+      <column type="field" hidden="0" name="Latitude (WGS84)" width="-1"/>
+      <column type="field" hidden="0" name="Longitude (WGS84)" width="-1"/>
+      <column type="field" hidden="0" name="Contrôle visuel OK" width="-1"/>
+      <column type="field" hidden="0" name="Contrôle flamblement OK" width="-1"/>
+      <column type="field" hidden="0" name="Respect voisinage réseau électrique" width="-1"/>
+      <column type="field" hidden="0" name="Contrôle pointe carrée OK" width="-1"/>
+      <column type="field" hidden="0" name="Contrôle secousses OK" width="-1"/>
+      <column type="field" hidden="0" name="Contrôle percussion OK" width="-1"/>
+      <column type="field" hidden="0" name="Voisinage électrique appui" width="-1"/>
+      <column type="field" hidden="0" name="Appui stratégique" width="-1"/>
+      <column type="field" hidden="0" name="Appui inaccessible véhicule" width="-1"/>
+      <column type="field" hidden="0" name="Nom du câble" width="-1"/>
+      <column type="field" hidden="0" name="Longueur portée" width="-1"/>
+      <column type="field" hidden="0" name="Angle en grade" width="-1"/>
+      <column type="field" hidden="0" name="Hauteur nappe" width="-1"/>
+      <column type="field" hidden="0" name="Hauteur de flèche portée" width="-1"/>
+      <column type="field" hidden="0" name="Température du relevé flèche" width="-1"/>
+      <column type="field" hidden="0" name="N° appui destination" width="-1"/>
+      <column type="field" hidden="0" name="Forfait cuivre" width="-1"/>
+      <column type="field" hidden="0" name="Forfait optique" width="-1"/>
+      <column type="field" hidden="0" name="Effort disponible avant ajout câble" width="-1"/>
+      <column type="field" hidden="0" name="Effort disponible après ajout câble" width="-1"/>
+      <column type="field" hidden="0" name="Effort disponible Nouveau support" width="-1"/>
+      <column type="field" hidden="0" name="Nature des travaux" width="-1"/>
+      <column type="field" hidden="0" name="Nombre de poteau commandé" width="-1"/>
+      <column type="field" hidden="0" name="Installation réhausse" width="-1"/>
+      <column type="field" hidden="0" name="transition souterraine" width="-1"/>
+      <column type="field" hidden="0" name="Distance avec transition existante" width="-1"/>
+      <column type="field" hidden="0" name="Installation dispositif de lovage" width="-1"/>
+      <column type="field" hidden="0" name="za_zpm" width="-1"/>
+      <column type="field" hidden="0" name="za_nro" width="-1"/>
+      <column type="field" hidden="0" name="code_insee" width="-1"/>
+      <column type="field" hidden="0" name="nom_norma" width="-1"/>
+      <column type="field" hidden="0" name="controle_visuel" width="-1"/>
+      <column type="field" hidden="0" name="controle_calcul" width="-1"/>
+      <column type="field" hidden="0" name="etat" width="-1"/>
+      <column type="field" hidden="0" name="ban_vert" width="-1"/>
+      <column type="field" hidden="0" name="modele" width="-1"/>
+      <column type="field" hidden="0" name="sup_remp" width="-1"/>
+      <column type="field" hidden="0" name="com_etat" width="-1"/>
+      <column type="field" hidden="0" name="Type d appui (format GESPOT)" width="-1"/>
+      <column type="field" hidden="0" name="Adresse de l appui (N°, rue ou lieu dit)" width="-1"/>
+      <column type="field" hidden="0" name="Appui utilisable en l état" width="-1"/>
+      <column type="field" hidden="0" name="Milieu environnant de l appui" width="-1"/>
+      <column type="field" hidden="0" name="Type d appui avant travaux" width="-1"/>
+      <column type="field" hidden="0" name="Type d appui aprés travaux" width="-1"/>
+      <column type="field" hidden="0" name="Pose d un boitier optique" width="-1"/>
+      <column type="field" hidden="0" name="Nombre de boitiers sur l appui" width="-1"/>
+      <column type="field" hidden="0" name="numero_appuis_capft" width="-1"/>
+      <column type="field" hidden="0" name="NRO" width="-1"/>
+      <column type="field" hidden="0" name="PMZ" width="-1"/>
+      <column type="field" hidden="0" name="Etude" width="-1"/>
+      <column type="field" hidden="0" name="propriet" width="-1"/>
+      <column type="field" hidden="0" name="Remplace" width="-1"/>
+      <column type="field" hidden="0" name="h_traverse" width="-1"/>
+      <column type="field" hidden="0" name="commentair" width="-1"/>
+      <column type="field" hidden="0" name="Contrôle verticalité OK et absence étiquette orange" width="-1"/>
+      <column type="field" hidden="0" name="Absence étiquette jaune" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>

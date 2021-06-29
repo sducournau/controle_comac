@@ -24,7 +24,7 @@ class list_etudes_obj:
 
 
 
-    def __init__(self, inputs, output, plugin_dir, layer_name, repare_pcm=False, option_boitier_fibre=False):
+    def __init__(self, inputs, output, plugin_dir, layer_name,longueur_facture_d3, repare_pcm=False, option_boitier_fibre=False):
 
         self.list_fields_export_comac_supports = ['NRO','PMZ','Etude','etat','troncon', 'numero','commentair']
         self.list_fields_export_stats = ["NRO","Numéro PMZ GEOFIBRE",'Commune',"INSEE","Nom d'affaire E-PLAN",'Adresse','N° Plan','Nb de Support Enedis','Nb de Support D3','Réseau projetés (m)',
@@ -44,6 +44,7 @@ class list_etudes_obj:
         self.data = {'comac' : self.list_etudes_comac, 'capft':self.list_etudes_capft }
         self.plugin_dir = plugin_dir
         self.layer_name = layer_name
+        self.longueur_facture_d3 = longueur_facture_d3
         print(self.inputs)
         with open(self.plugin_dir + os.sep + 'list_supports.txt', newline='', encoding='cp1252') as csv_trad_supports:
             reader = csv.DictReader(csv_trad_supports, delimiter='\t')
@@ -215,7 +216,7 @@ class list_etudes_obj:
 
         for y, pcm in enumerate(self.list_pcm):
 
-            self.buildEtudeComacItem(pcm, self.data['comac'], self.list_fields_export_comac_supports, self.type_supports, self.repare_pcm, self.option_boitier_fibre)
+            self.buildEtudeComacItem(pcm, self.data['comac'], self.list_fields_export_comac_supports, self.type_supports, self.repare_pcm, self.option_boitier_fibre, self.longueur_facture_d3)
             self.nb_appuis_comac += len(self.list_etudes_comac[y]['Supports'])
 
 
@@ -788,7 +789,7 @@ class list_etudes_obj:
 
 #         proj_wgs93 = pyproj.Proj(proj='latlong', ellps='epsg:2154')
 
-        def __init__(self, pcm, list_etudes, list_fields_export_supports, type_supports,repare_pcm,option_boitier_fibre):
+        def __init__(self, pcm, list_etudes, list_fields_export_supports, type_supports,repare_pcm,option_boitier_fibre, longueur_facture_d3):
 
 
             self.type_supports = type_supports
@@ -803,6 +804,7 @@ class list_etudes_obj:
             self.name_2 = self.name_2.name
             self.repare_pcm = repare_pcm
             self.option_boitier_fibre = option_boitier_fibre
+            self.longueur_facture_d3 = longueur_facture_d3
 
             if re.search('(?<=-)([23D]*(-){1})', self.name_1) or re.search('((?<=-)(V){1}[0-9]{1})', self.name_1) or re.search('(?<=-)([A-CE-Z]{1})([0-9]{1,2})', self.name_1):
                 self.name = self.name_1
@@ -1011,8 +1013,8 @@ class list_etudes_obj:
                                 longueur += float(ligne['Portees'][portee][0])
 
 
-            longueur_formule = '=INDIRECT(ADRESSE(LIGNE();COLONNE()-2;4))*40+' + str(longueur).replace('.', ',')
-            longueur_abs = (len(list_supports['D3']) + len(list_supports['D3-1'])) * 40 + longueur
+            longueur_formule = '=INDIRECT(ADRESSE(LIGNE();COLONNE()-2;4))*' + str(self.longueur_facture_d3) + '+' + str(longueur).replace('.', ',')
+            longueur_abs = (len(list_supports['D3']) + len(list_supports['D3-1'])) * int(self.longueur_facture_d3) + int(longueur)
 
             return {'Absolue' : str(longueur_abs).replace('.', ','), 'Formule' : longueur_formule}
 

@@ -50,9 +50,10 @@ class ImportTask(QgsTask):
                     option_repare_pcm = True
                 elif option == "Compter RAS + Boitier en D3":
                     option_boitier_fibre = True
-            if len(utils.INPUTS) > 0:
 
-                self.etudes = list_etudes_obj(utils.INPUTS, utils.DIR_OUTPUT, utils.DIR_PLUGIN, self.layer_name,option_repare_pcm,option_boitier_fibre)
+            if len(utils.INPUTS) > 0:
+                print(utils.facture_d3)
+                self.etudes = list_etudes_obj(utils.INPUTS, utils.DIR_OUTPUT, utils.DIR_PLUGIN, self.layer_name,utils.facture_d3,option_repare_pcm,option_boitier_fibre)
                 utils.ETUDES = self.etudes
                 self.etudes.calcul(self.layer_name)
 

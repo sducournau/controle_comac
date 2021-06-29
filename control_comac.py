@@ -609,6 +609,7 @@ class ControlComac:
         utils.config_data['TABLE_NUM_APPUI'] = self.dockwidget.lineEdit_config_connexionbdd_tablenum.text()
         utils.config_data['EPLAN']['id'] = self.dockwidget.lineEdit_id.text()
         utils.config_data['EPLAN']['mpd'] = self.dockwidget.lineEdit_mpd.text()
+        utils.config_data['facture_d3'] = self.dockwidget.lineEdit_facture_d3.text()
         self.dockwidget.checkBox_comac_create_athd.setText('Créer les appuis {}'.format(str(utils.config_data['GESTIONNAIRE'])))
         self.dockwidget.checkBox_capft_create_athd.setText('Créer les appuis {}'.format(str(utils.config_data['GESTIONNAIRE'])))
         utils.reload_config(utils.config_data, PRECEDENT_GESTIONNAIRE)
@@ -863,12 +864,14 @@ class ControlComac:
 
                 #config tab
 
+                self.dockwidget.lineEdit_facture_d3.setText(str(utils.facture_d3))
                 self.dockwidget.lineEdit_pcm_rayon.setText(str(utils.PCM_RAYON))
                 self.dockwidget.lineEdit_pcm_rayon.textChanged.connect(self.change_pcm_rayon)
                 self.dockwidget.lineEdit_config_gestionnaire.setText(str(utils.config_data['GESTIONNAIRE']))
                 self.dockwidget.lineEdit_config_connexionbdd.setText(str(utils.config_data['CONNEXION']))
                 self.dockwidget.lineEdit_config_connexionbdd_schema.setText(str(utils.config_data['SCHEMA']))
                 self.dockwidget.lineEdit_config_connexionbdd_tablenum.setText(str(utils.config_data['TABLE_NUM_APPUI']))
+                self.dockwidget.pushButton_facture_d3.clicked.connect(self.rewrite_config)
                 self.dockwidget.pushButton_config_gestionnaire.clicked.connect(self.rewrite_config)
                 self.dockwidget.pushButton_config_connexionbdd.clicked.connect(self.rewrite_config)
                 self.dockwidget.pushButton_config_connexionbdd_schema.clicked.connect(self.rewrite_config)

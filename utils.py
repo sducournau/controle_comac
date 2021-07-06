@@ -243,9 +243,9 @@ def zoom_to_features(layer):
 
 def reload_config(data, PRECEDENT_GESTIONNAIRE):
 
-    with open(DIR_PLUGIN + '/config/config.json',"w") as outfile:
+    with open(DIR_CONFIG + '/config/config.json',"w") as outfile:
         json.dump(data, outfile)
-    with open(DIR_PLUGIN + '/config/config.json',"r") as outfile:
+    with open(DIR_CONFIG + '/config/config.json',"r") as outfile:
         config_data = json.load(outfile)
 
     global LAYERS_NAME

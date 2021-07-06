@@ -10,6 +10,7 @@ from . import utils as utils
 from .utils import *
 from .ImportEtudes import *
 
+
 MESSAGE_CATEGORY = 'ImportTask'
 
 

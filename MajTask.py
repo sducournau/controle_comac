@@ -556,29 +556,26 @@ class MajTask(QgsTask):
                     self.layer_to_edit.changeAttributeValue(feat.id(), self.fieldkeys[0], 'D2')
                     self.total_feat_updated['maj_pb'] += 1
 
+
+#                    if feat['Etude'] not in self.dict_comac_to_update:
+#                         self.dict_comac_to_update[feat['Etude']] = []
+#                    self.dict_comac_to_update[feat['Etude']].append(feat['Nom'])
+
+#        print(self.dict_comac_to_update)
+#        nb_etudes = 0
+#        for key in self.dict_comac_to_update:
+#             for etude in self.etudes.data['comac']:
+#                 if etude['Etude'] == key:
+#                     nb_etudes += 1
+#                     # print(nb_etudes)
+#
+        #             self.etudes.update_etude_comac(etude, self.dict_comac_to_update[key])
+
+
+
+        #self.etudes.export([2,2,2,0,0,0])
+
         return True
-                    # if self.layer_for_edit['Etude'] not in self.dict_comac_to_update.keys():
-                    #     self.dict_comac_to_update[self.layer_for_edit['Etude']] = []
-                    # self.dict_comac_to_update[self.layer_for_edit['Etude']].append(feat_from_comac.attributes()['Nom'])
-
-        # print(dict_comac_to_update)
-        # nb_etudes = 0
-        # for key in self.dict_comac_to_update:
-        #     for etude in self.etudes.data['comac']:
-        #         if etude['Etude'] == key:
-        #             nb_etudes += 1
-        #             # print(nb_etudes)
-        #
-        #             self.etudes.update_etude_comac(etude, dict_comac_to_update[key])
-        #
-        #
-        #
-        # self.etudes.export([2,2,2,0,0,0])
-        #
-        # iface.messageBar().pushMessage(
-        #     "Success", str(nb_etudes) + " études ont été corrigés",
-        #     level=Qgis.Success, duration=5)
-
 
 
 

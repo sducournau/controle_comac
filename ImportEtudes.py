@@ -1309,7 +1309,7 @@ class list_etudes_obj:
                 if support['ban_vert'] == 'nok': erreur = 'Bandeau vert non coché'
 
 
-            if not [(match) for match in matchers_nature if match in support['Nature']] and (support['Nom'] not in list_supports_total_fibre) and not [(match) for match in matchers_name if match in support['Nom']]:
+            if support['NonCalcule'] == '0' and not [(match) for match in matchers_nature if match in support['Nature']] and (support['Nom'] not in list_supports_total_fibre) and not [(match) for match in matchers_name if match in support['Nom']]:
                 if ((support['optBandeauVertAPoser'] == '1' if 'optBandeauVertAPoser' in support else False) or (support['optBandeauVertExistant'] == '1' if 'optBandeauVertExistant' in support else False)) and (support['optBoitierFibre'] == '0' if 'optBoitierFibre' in support else False):
                     troncon = 'D3'
                     support['etat'] = 'ok'
